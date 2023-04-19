@@ -8,12 +8,10 @@
   },
   "permissions": [
     "tabs",
-    "cookies",
-    "identity"
+    "cookies"
   ],
-  "oauth2": {
-    "client_id": "YOUR_GOOGLE_API_CLIENT_ID",
-    "scopes": ["openid"]
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
   },
   "background": {
     "service_worker": "background.js"

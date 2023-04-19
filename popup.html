@@ -15,7 +15,11 @@
         font-size: 24px;
         margin-bottom: 10px;
       }
-      #poshmarkStatus {
+      img {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+      #loginStatus {
         font-size: 18px;
         margin-bottom: 20px;
       }
@@ -35,9 +39,10 @@
     </style>
   </head>
   <body>
+    <img src="icon48.png" />
     <h1>Poshmark Helper</h1>
-    <div id="poshmarkStatus">Poshmark: <span id="loginStatus">Not Logged In</span></div>
-    <button id="openPoshmark" data-is-logged-in="false">Open Poshmark</button>
+    <div id="loginStatus">Checking login status...</div>
+    <button id="openPoshmark">Open Poshmark</button>
     <script src="popup.js"></script>
   </body>
 </html>
