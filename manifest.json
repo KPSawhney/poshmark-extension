@@ -11,9 +11,10 @@
     "cookies",
     "identity"
   ],
-  "host_permissions": [
-    "https://*.poshmark.com/"
-  ],
+  "oauth2": {
+    "client_id": "YOUR_GOOGLE_API_CLIENT_ID",
+    "scopes": ["openid"]
+  },
   "background": {
     "service_worker": "background.js"
   }
