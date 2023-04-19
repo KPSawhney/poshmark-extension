@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 300px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: #2f2f2f;
+      }
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      img {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+      #status {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: #0f62fe;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0353e9;
+      }
+      input {
+        width: 60px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://logowik.com/content/uploads/images/openai5002.jpg" />
+    <h1>OpenAI Tab Scheduler</h1>
+    <div id="status">Status: <span id="taskStatus">Running</span></div>
+    <button id="pauseResume">Pause</button>
+    <p>
+      Set custom interval (5s - 1min):
+      <br />
+      <input type="number" id="customInterval" min="5" max="60" step="1" /> seconds
+    </p>
+    <button id="setInterval">Set Interval</button>
+    <p>Current interval: <span id="currentInterval">0</span> seconds</p>
+    <script src="popup.js"></script>
+  </body>
+</html>
