@@ -1,18 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "My Periodic Task Extension",
+  "name": "Poshmark Helper",
   "version": "1.0",
-  "description": "Opens openai.com in a new tab every 3 hours",
-  "background": {
-    "service_worker": "background.js"
+  "description": "A simple Chrome extension to help with Poshmark navigation.",
+  "action": {
+    "default_popup": "popup.html"
   },
   "permissions": [
     "tabs",
-    "alarms",
-    "storage"
+    "cookies"
   ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_title": "Task Status"
+  "host_permissions": [
+    "https://*.poshmark.com/"
+  ],
+  "background": {
+    "service_worker": "background.js"
   }
 }

@@ -1,51 +1,32 @@
-const defaultInterval = 3 * 60 * 60 * 1000; // 3 hours
-let currentInterval = defaultInterval;
-let taskCount = 0;
-let taskId;
-let taskStatus = 'Running';
+let isLoggedIn = false;
 
-function openOpenAI() {
-  chrome.tabs.create({ url: 'https://openai.com' });
-  taskCount++;
-  chrome.storage.local.set({ taskCount });
-}
-
-function startTask() {
-  taskId = setInterval(() => {
-    if (taskStatus === 'Running') {
-      openOpenAI();
+function checkPoshmarkLoginStatus(callback) {
+  chrome.cookies.get({ url: 'https://poshmark.com', name: 'remember_user_token' }, (cookie) => {
+    isLoggedIn = !!cookie;
+    console.log('Checking login status:', isLoggedIn ? 'Logged In' : 'Not Logged In');
+    if (callback) {
+      callback(isLoggedIn);
     }
-  }, currentInterval);
+  });
 }
 
-function stopTask() {
-  clearInterval(taskId);
+function pollForLoginStatusChanges() {
+  setInterval(() => {
+    checkPoshmarkLoginStatus((newIsLoggedIn) => {
+      if (newIsLoggedIn !== isLoggedIn) {
+        console.log('Login status changed:', isLoggedIn ? 'Logged In' : 'Not Logged In');
+        isLoggedIn = newIsLoggedIn;
+      }
+    });
+  }, 5000);
 }
-
-chrome.runtime.onInstalled.addListener(() => {
-  startTask();
-});
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  switch (request.type) {
-    case 'getTaskCount':
-      sendResponse({ taskCount });
-      break;
-    case 'getStatus':
-      sendResponse({ status: taskStatus });
-      break;
-    case 'getCurrentInterval':
-      sendResponse({ interval: currentInterval / 1000 });
-      break;
-    case 'toggleStatus':
-      taskStatus = taskStatus === 'Running' ? 'Paused' : 'Running';
-      break;
-    case 'setCustomInterval':
-      currentInterval = request.customInterval * 1000;
-      stopTask();
-      startTask();
-      break;
-    default:
-      break;
+  if (request.type === 'getPoshmarkLoginStatus') {
+    console.log('Sending login status:', isLoggedIn ? 'Logged In' : 'Not Logged In');
+    sendResponse({ isLoggedIn });
   }
 });
+
+checkPoshmarkLoginStatus();
+pollForLoginStatusChanges();

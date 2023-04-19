@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OpenAI Tab Scheduler</title>
+    <title>Poshmark Helper</title>
     <style>
       body {
         width: 300px;
@@ -15,11 +15,7 @@
         font-size: 24px;
         margin-bottom: 10px;
       }
-      img {
-        width: 100px;
-        margin-bottom: 20px;
-      }
-      #status {
+      #poshmarkStatus {
         font-size: 18px;
         margin-bottom: 20px;
       }
@@ -36,25 +32,12 @@
       button:hover {
         background-color: #0353e9;
       }
-      input {
-        width: 60px;
-        text-align: center;
-        margin-bottom: 20px;
-      }
     </style>
   </head>
   <body>
-    <img src="https://logowik.com/content/uploads/images/openai5002.jpg" />
-    <h1>OpenAI Tab Scheduler</h1>
-    <div id="status">Status: <span id="taskStatus">Running</span></div>
-    <button id="pauseResume">Pause</button>
-    <p>
-      Set custom interval (5s - 1min):
-      <br />
-      <input type="number" id="customInterval" min="5" max="60" step="1" /> seconds
-    </p>
-    <button id="setInterval">Set Interval</button>
-    <p>Current interval: <span id="currentInterval">0</span> seconds</p>
+    <h1>Poshmark Helper</h1>
+    <div id="poshmarkStatus">Poshmark: <span id="loginStatus">Not Logged In</span></div>
+    <button id="openPoshmark" data-is-logged-in="false">Open Poshmark</button>
     <script src="popup.js"></script>
   </body>
 </html>

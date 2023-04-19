@@ -1,38 +1,18 @@
-function updateTaskCount() {
-  chrome.runtime.sendMessage({ type: 'getTaskCount' }, (response) => {
-    let count = response.taskCount || 0;
-    document.getElementById('taskCount').textContent = count;
-  });
-}
-
-function updateStatus() {
-  chrome.runtime.sendMessage({ type: 'getStatus' }, (response) => {
-    document.getElementById('taskStatus').textContent = response.status;
-    document.getElementById('pauseResume').textContent = response.status === 'Running' ? 'Pause' : 'Resume';
-  });
-}
-
-function updateCurrentInterval() {
-  chrome.runtime.sendMessage({ type: 'getCurrentInterval' }, (response) => {
-    document.getElementById('currentInterval').textContent = response.interval;
-  });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
-  updateTaskCount();
-  updateStatus();
-  updateCurrentInterval();
-
-  document.getElementById('pauseResume').addEventListener('click', () => {
-    chrome.runtime.sendMessage({ type: 'toggleStatus' }, () => {
-      updateStatus();
+  function updateLoginStatus() {
+    chrome.runtime.sendMessage({ type: 'getPoshmarkLoginStatus' }, (response) => {
+      const isLoggedIn = response.isLoggedIn;
+      console.log('Received login status:', isLoggedIn ? 'Logged In' : 'Not Logged In'); // Add this log
+      document.getElementById('loginStatus').textContent = isLoggedIn ? 'Logged In' : 'Not Logged In';
+      document.getElementById('openPoshmark').dataset.isLoggedIn = isLoggedIn;
     });
-  });
+  }
 
-  document.getElementById('setInterval').addEventListener('click', () => {
-    let customInterval = document.getElementById('customInterval').value;
-    chrome.runtime.sendMessage({ type: 'setCustomInterval', customInterval: parseInt(customInterval, 10) }, () => {
-      updateCurrentInterval();
-    });
+  updateLoginStatus();
+
+  document.getElementById('openPoshmark').addEventListener('click', () => {
+    const isLoggedIn = document.getElementById('openPoshmark').dataset.isLoggedIn === 'true';
+    const url = isLoggedIn ? 'https://poshmark.com/my_account' : 'https://poshmark.com/login';
+    chrome.tabs.create({ url });
   });
 });
