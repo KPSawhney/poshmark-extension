@@ -10,4 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('openPoshmark').addEventListener('click', () => {
     chrome.tabs.create({ url: 'https://poshmark.com' });
   });
+
+  document.getElementById('myCloset').addEventListener('click', () => {
+    chrome.tabs.create({ url: 'https://poshmark.com/closet/kylesawhney' });
+  });  
 });
