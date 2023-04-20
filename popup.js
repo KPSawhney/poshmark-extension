@@ -1,30 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  checkLoginStatus();
-});
+document.addEventListener('DOMContentLoaded', () => {
+  const port = chrome.runtime.connect({ name: "getPoshmarkLoginStatus" });
 
-function checkLoginStatus() {
-  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, { action: "checkLogin" }, function (response) {
-      if (chrome.runtime.lastError) {
-        console.error(chrome.runtime.lastError);
-        return;
-      }
-      handleLoginStatus(response);
-    });
+  port.onMessage.addListener((response) => {
+    const isLoggedIn = response.isLoggedIn;
+    console.log(`Received login status: ${isLoggedIn ? 'Logged In' : 'Not Logged In'}`);
+    document.getElementById('loginStatus').textContent = isLoggedIn ? 'Logged In' : 'Not Logged In';
   });
-}
 
-function handleLoginStatus(request) {
-  let loggedInDiv = document.getElementById("loggedIn");
-  let loggedOutDiv = document.getElementById("loggedOut");
-
-  if (request.loggedIn && request.profileImageUrl && request.closetUrl) {
-    loggedInDiv.style.display = "block";
-    loggedOutDiv.style.display = "none";
-    document.getElementById("userProfileImage").src = request.profileImageUrl;
-    document.getElementById("myClosetButton").href = request.closetUrl;
-  } else {
-    loggedInDiv.style.display = "none";
-    loggedOutDiv.style.display = "block";
-  }
-}
+  document.getElementById('openPoshmark').addEventListener('click', () => {
+    chrome.tabs.create({ url: 'https://poshmark.com' });
+  });
+});

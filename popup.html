@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #F6F6F6;
-      margin: 0;
-      padding: 10px;
-      width: 300px;
-      height: 150px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 24px;
-      color: #2c2c2c;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-</head>
-<body>
-  <div id="loggedIn" style="display: none;">
-    <h1>Welcome to Poshmark</h1>
-    <img id="userProfileImage" src="" alt="User Profile" style="width: 50px; height: 50px; border-radius: 50%;">
-    <a id="myClosetButton" href="#" target="_blank" style="display: inline-block; margin-top: 10px; background-color: #F2C7E9; color: #fff; padding: 5px 10px; border-radius: 5px; text-decoration: none;">My Closet</a>
-  </div>
-  <div id="loggedOut" style="display: none;">
-    <h1>Please log in to Poshmark</h1>
-  </div>
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poshmark Helper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        width: 300px;
+        font-family: 'Lato', Arial, sans-serif;
+        text-align: center;
+        background-color: #f8f8f8;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      img {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+      #loginStatus {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #2f2f2f;
+      }
+      button {
+        background-color: #e91e63;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      button:hover {
+        background-color: #d60d57;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.23);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Poshmark Helper</h1>
+    <div id="loginStatus">Checking login status...</div>
+    <button id="openPoshmark">Open Poshmark</button>
+    <script src="popup.js"></script>
+  </body>
 </html>
