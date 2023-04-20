@@ -24,3 +24,51 @@ if (closetURL) {
   console.error('Failed to parse closet URL');
 }
 
+// Listen for messages from popup.js
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  if (message.type === 'shareToFollowers') {
+    console.info('Sharing to followers...');
+    shareItemsToFollowers();
+  }
+});
+
+function shareItemsToFollowers() {
+  // Step 1: Click on the spanner icon
+  const spannerIcon = document.querySelector('i.icon.icon-bulk-tools');
+  if (spannerIcon) {
+    spannerIcon.click();
+
+    // Step 2: Click share to followers dropdown choice
+    setTimeout(() => {
+      const shareToFollowersButton = document.querySelector('div[data-et-name="share_to_followers"]');
+      if (shareToFollowersButton) {
+        shareToFollowersButton.click();
+
+        // Step 3: Click the checkbox to select all clothes after the page reloads
+        setTimeout(() => {
+          const selectAllCheckbox = document.querySelector('.tile__checkbox');
+          if (selectAllCheckbox) {
+            selectAllCheckbox.click();
+
+            // Step 4: Click the green Share Followers button
+            setTimeout(() => {
+              const greenShareButton = document.querySelector('button[data-et-name="share_to_followers"]');
+              if (greenShareButton) {
+                greenShareButton.click();
+                console.info('Sharing to followers completed successfully.');
+              } else {
+                console.error('Error: Green Share Followers button not found');
+              }
+            }, 1000);
+          } else {
+            console.error('Error: Select All checkbox not found');
+          }
+        }, 1000);
+      } else {
+        console.error('Error: Share to Followers dropdown choice not found');
+      }
+    }, 1000);
+  } else {
+    console.error('Error: Spanner icon not found');
+  }
+}
