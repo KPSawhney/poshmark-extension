@@ -1,24 +1,43 @@
+console.info('background.js loaded');
+
 function checkPoshmarkLoginStatus(callback) {
-  // Check for jwt and ui cookies
+  console.info('Checking Poshmark login status...');
   chrome.cookies.get({ url: 'https://poshmark.com', name: 'jwt' }, function (jwtCookie) {
     chrome.cookies.get({ url: 'https://poshmark.com', name: 'ui' }, function (uiCookie) {
       let poshmarkLoginStatus;
-      // If both jwt and ui cookies are present, user is logged in
       if (jwtCookie && uiCookie) {
         poshmarkLoginStatus = 'Logged In';
       } else {
         poshmarkLoginStatus = 'Not Logged In';
       }
-      console.log('Poshmark login status:', poshmarkLoginStatus);
+      console.info('Poshmark login status:', poshmarkLoginStatus);
       callback(poshmarkLoginStatus);
     });
   });
 }
 
-chrome.runtime.onConnect.addListener(function (port) {
-  if (port.name === "getPoshmarkLoginStatus") {
-    checkPoshmarkLoginStatus(function (status) {
-      port.postMessage({ isLoggedIn: status === 'Logged In' });
+async function getClosetURL() {
+  return new Promise((resolve) => {
+    chrome.storage.local.get(['closetURL'], function (result) {
+      resolve(result.closetURL);
     });
+  });
+}
+
+chrome.runtime.onConnect.addListener(function (port) {
+  if (port.name === "getPoshmarkData") {
+    checkPoshmarkLoginStatus(async function (status) {
+      const myClosetURL = await getClosetURL();
+      port.postMessage({ isLoggedIn: status === 'Logged In', closetURL: myClosetURL });
+    });
+  }
+});
+
+let myClosetURL = null;
+
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  if (message.type === 'closetURL') {
+    myClosetURL = message.url;
+    console.info('Received closet URL:', myClosetURL);
   }
 });
