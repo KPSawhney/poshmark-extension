@@ -1,4 +1,4 @@
-function checkPoshmarkLoginStatus() {
+function checkPoshmarkLoginStatus(callback) {
   // Check for jwt and ui cookies
   chrome.cookies.get({ url: 'https://poshmark.com', name: 'jwt' }, function (jwtCookie) {
     chrome.cookies.get({ url: 'https://poshmark.com', name: 'ui' }, function (uiCookie) {
@@ -10,20 +10,15 @@ function checkPoshmarkLoginStatus() {
         poshmarkLoginStatus = 'Not Logged In';
       }
       console.log('Poshmark login status:', poshmarkLoginStatus);
-      // Send the updated login status to other parts of the extension
-      sendLoginStatus(poshmarkLoginStatus);
+      callback(poshmarkLoginStatus);
     });
   });
 }
 
-function sendLoginStatus(status) {
-  // Add the necessary listener
-  chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.type === 'getPoshmarkLoginStatus') {
-      sendResponse({ isLoggedIn: status === 'Logged In' });
-    }
-  });
-}
-
-// Call the function initially to set up the listener
-checkPoshmarkLoginStatus();
+chrome.runtime.onConnect.addListener(function (port) {
+  if (port.name === "getPoshmarkLoginStatus") {
+    checkPoshmarkLoginStatus(function (status) {
+      port.postMessage({ isLoggedIn: status === 'Logged In' });
+    });
+  }
+});
