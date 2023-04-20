@@ -1,28 +1,29 @@
-async function checkPoshmarkLoginStatus() {
-  return new Promise((resolve) => {
-    chrome.cookies.get({ url: 'https://poshmark.com', name: 'MUID' }, (cookie) => {
-      resolve(!!cookie);
+function checkPoshmarkLoginStatus() {
+  // Check for jwt and ui cookies
+  chrome.cookies.get({ url: 'https://poshmark.com', name: 'jwt' }, function (jwtCookie) {
+    chrome.cookies.get({ url: 'https://poshmark.com', name: 'ui' }, function (uiCookie) {
+      let poshmarkLoginStatus;
+      // If both jwt and ui cookies are present, user is logged in
+      if (jwtCookie && uiCookie) {
+        poshmarkLoginStatus = 'Logged In';
+      } else {
+        poshmarkLoginStatus = 'Not Logged In';
+      }
+      console.log('Poshmark login status:', poshmarkLoginStatus);
+      // Send the updated login status to other parts of the extension
+      sendLoginStatus(poshmarkLoginStatus);
     });
   });
 }
 
-async function checkGoogleLoginStatus() {
-  return new Promise((resolve) => {
-    chrome.cookies.get({ url: 'https://poshmark.com', name: 'G_AUTHUSER_H' }, (cookie) => {
-      resolve(!!cookie);
-    });
+function sendLoginStatus(status) {
+  // Add the necessary listener
+  chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (request.type === 'getPoshmarkLoginStatus') {
+      sendResponse({ isLoggedIn: status === 'Logged In' });
+    }
   });
 }
 
-chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
-  if (request.type === 'getPoshmarkLoginStatus') {
-    console.log('Checking Poshmark login status...');
-    const poshmarkLoggedIn = await checkPoshmarkLoginStatus();
-    console.log('Checking Google login status...');
-    const googleLoggedIn = await checkGoogleLoginStatus();
-    const isLoggedIn = poshmarkLoggedIn || googleLoggedIn;
-    console.log(`Sending login status: ${isLoggedIn ? 'Logged In' : 'Not Logged In'}`);
-    sendResponse({ isLoggedIn });
-  }
-  return true;
-});
+// Call the function initially to set up the listener
+checkPoshmarkLoginStatus();

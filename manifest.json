@@ -10,9 +10,10 @@
     "tabs",
     "cookies"
   ],
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'"
-  },
+  "host_permissions": [
+    "https://*.poshmark.com/",
+    "https://accounts.google.com/"
+  ],
   "background": {
     "service_worker": "background.js"
   }
