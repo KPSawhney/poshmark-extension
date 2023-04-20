@@ -1,5 +1,7 @@
+// Log when background.js is loaded
 console.info('background.js loaded');
 
+// Check Poshmark login status using jwt and ui cookies
 function checkPoshmarkLoginStatus(callback) {
   console.info('Checking Poshmark login status...');
   chrome.cookies.get({ url: 'https://poshmark.com', name: 'jwt' }, function (jwtCookie) {
@@ -16,6 +18,7 @@ function checkPoshmarkLoginStatus(callback) {
   });
 }
 
+// Get closet URL from local storage
 async function getClosetURL() {
   return new Promise((resolve) => {
     chrome.storage.local.get(['closetURL'], function (result) {
@@ -24,6 +27,7 @@ async function getClosetURL() {
   });
 }
 
+// Listen for connection from popup.js
 chrome.runtime.onConnect.addListener(function (port) {
   if (port.name === "getPoshmarkData") {
     checkPoshmarkLoginStatus(async function (status) {
@@ -35,6 +39,7 @@ chrome.runtime.onConnect.addListener(function (port) {
 
 let myClosetURL = null;
 
+// Listen for messages from content.js
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   if (message.type === 'closetURL') {
     myClosetURL = message.url;
