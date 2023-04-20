@@ -8,8 +8,9 @@
   },
   "permissions": [
     "tabs",
-    "cookies"
-  ],
+    "cookies",
+    "webNavigation"
+  ],  
   "host_permissions": [
     "https://*.poshmark.com/",
     "https://accounts.google.com/"
