@@ -27,7 +27,7 @@ async function getClosetURL() {
   });
 }
 
-// Listen for connection from popup.js
+// Listen for connection from popup.js to send login status and closet URL
 chrome.runtime.onConnect.addListener(function (port) {
   if (port.name === "getPoshmarkData") {
     checkPoshmarkLoginStatus(async function (status) {
@@ -37,9 +37,10 @@ chrome.runtime.onConnect.addListener(function (port) {
   }
 });
 
+// Store closet URL received from content.js
 let myClosetURL = null;
 
-// Listen for messages from content.js
+// Listen for messages from content.js to update myClosetURL
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   if (message.type === 'closetURL') {
     myClosetURL = message.url;

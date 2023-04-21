@@ -24,7 +24,7 @@ if (closetURL) {
   console.error('Failed to parse closet URL');
 }
 
-// Listen for messages from popup.js
+// Listen for messages from popup.js to share items to followers
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   if (message.type === 'shareToFollowers') {
     console.info('Sharing to followers...');

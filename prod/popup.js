@@ -1,9 +1,10 @@
 console.info('popup.js loaded');
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Connect to background.js
   const port = chrome.runtime.connect({ name: "getPoshmarkData" });
 
-  // Listen for messages from background.js
+  // Listen for messages from background.js to update UI based on login status
   port.onMessage.addListener((response) => {
     const isLoggedIn = response.isLoggedIn;
     console.info(`Received login status: ${isLoggedIn ? 'Logged In' : 'Not Logged In'}`);
