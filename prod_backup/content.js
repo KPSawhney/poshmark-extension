@@ -20,33 +20,15 @@ if (closetURL) {
   chrome.runtime.sendMessage({ type: 'closetURL', url: closetURL });
   // Save the closet URL to local storage
   chrome.storage.local.set({ closetURL: closetURL });
-
-  // Check if the user is on their closet page
-  checkIsOnClosetPage(closetURL);
 } else {
   console.error('Failed to parse closet URL');
 }
 
-function checkIsOnClosetPage(closetURL) {
-  const currentURL = window.location.href;
-  console.log('Current URL:', currentURL);
-  console.log('Closet URL:', closetURL);
-  if (currentURL === closetURL) {
-    console.log('User is on their closet page');
-    chrome.runtime.sendMessage({ type: 'isOnClosetPage', isOnClosetPage: true });
-  } else {
-    console.log('User is not on their closet page');
-    chrome.runtime.sendMessage({ type: 'isOnClosetPage', isOnClosetPage: false });
-  }
-}
-
-// Listen for messages from popup.js
+// Listen for messages from popup.js to share items to followers
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-  console.log('Received message:', message);
   if (message.type === 'shareToFollowers') {
     console.info('Sharing to followers...');
-    shareItemsToFollowers(sendResponse);
-    return true;
+    shareItemsToFollowers();
   }
 });
 
@@ -74,16 +56,6 @@ function shareItemsToFollowers() {
               if (greenShareButton) {
                 greenShareButton.click();
                 console.info('Sharing to followers completed successfully.');
-
-                // Step 5: Log the flash message
-                setTimeout(() => {
-                  const flashMessage = document.querySelector('#flash .flash__message');
-                  if (flashMessage) {
-                    console.info('Flash message:', flashMessage.textContent.trim());
-                  } else {
-                    console.error('Error: Flash message not found');
-                  }
-                }, 1000);
               } else {
                 console.error('Error: Green Share Followers button not found');
               }
@@ -100,32 +72,3 @@ function shareItemsToFollowers() {
     console.error('Error: Spanner icon not found');
   }
 }
-
-const observer = new MutationObserver(function (mutations) {
-  mutations.forEach((mutation) => {
-    mutation.addedNodes.forEach((node) => {
-      if (node.matches('#app > main > div:nth-child(1)')) {
-        console.log('Main content container added to page');
-
-        // Add a new mutation observer to watch for the flash message
-        const flashMessageObserver = new MutationObserver(function (flashMutations) {
-          flashMutations.forEach((flashMutation) => {
-            flashMutation.addedNodes.forEach((flashNode) => {
-              if (flashNode.id === 'flash' && flashNode.querySelector('.flash__message')) {
-                console.info('Flash message detected:', flashNode.querySelector('.flash__message').textContent.trim());
-                // Send the flash message to popup.js
-                chrome.runtime.sendMessage({ type: 'flashMessage', content: flashNode.querySelector('.flash__message').textContent.trim() });
-              }
-            });
-          });
-        });
-
-        // Start observing the main content container for changes to its children
-        flashMessageObserver.observe(node, { childList: true, subtree: true });
-      }
-    });
-  });
-});
-
-// Start observing the entire document for new nodes being added
-observer.observe(document, { childList: true, subtree: true });
