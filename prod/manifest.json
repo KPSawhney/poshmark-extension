@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Poshmark Helper - Prod",
+  "name": "Poshmark Helper - Dev",
   "version": "0.1",
   "description": "A simple Chrome extension to help with Poshmark navigation.",
   "action": {

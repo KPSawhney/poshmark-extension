@@ -1,5 +1,20 @@
 console.info('popup.js loaded');
 
+function shareItemsToFollowers(callback) {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.sendMessage(tabs[0].id, { type: 'shareToFollowers' }, (response) => {
+      if (response) {
+        callback(response);
+      } else {
+        console.error('Error: No flash message received.');
+        // Handle the error when there is no flash message
+        // e.g. Show an error message or perform any other action
+      }
+    });
+    console.info('shareItemsToFollowers loaded');
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Connect to background.js
   const port = chrome.runtime.connect({ name: "getPoshmarkData" });
@@ -15,38 +30,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const myClosetURL = response.closetURL;
 
     // Update button text and behavior based on login status
-    if (isLoggedIn) {
-      poshmarkButton.textContent = 'My Closet';
-      poshmarkButton.addEventListener('click', () => {
-        if (myClosetURL) {
-          console.info('Opening My Closet...');
-          chrome.tabs.create({ url: myClosetURL }, (tab) => {
-            if (chrome.runtime.lastError) {
-              console.error('Error opening My Closet:', chrome.runtime.lastError);
-            } else {
-              console.info('My Closet opened in new tab:', tab.id);
-            }
-          });
+if (isLoggedIn) {
+  poshmarkButton.textContent = 'My Closet';
+  poshmarkButton.addEventListener('click', () => {
+    if (myClosetURL) {
+      console.info('Opening My Closet...');
+      chrome.tabs.create({ url: myClosetURL }, (tab) => {
+        if (chrome.runtime.lastError) {
+          console.error('Error opening My Closet:', chrome.runtime.lastError);
         } else {
-          console.warn('Closet URL not available');
+          console.info('My Closet opened in new tab:', tab.id);
         }
       });
-
-      shareToFollowersButton.style.display = 'inline-block';
-      shareToFollowersButton.addEventListener('click', () => {
-        console.info('Share to Followers button clicked');
-        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-          chrome.tabs.sendMessage(tabs[0].id, { type: 'shareToFollowers' });
-        });
-      });
     } else {
+      console.warn('Closet URL not available');
+    }
+  });
+
+  shareToFollowersButton.style.display = 'inline-block';
+  shareToFollowersButton.addEventListener('click', () => {
+    console.info('Share to Followers button clicked');
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      shareItemsToFollowers((successMessage) => {
+        console.info('Success message:', successMessage);
+        // Update HTML to show success message
+        document.getElementById('successAnimation').style.display = 'block';
+        setTimeout(() => {
+          document.getElementById('successAnimation').style.display = 'none';
+        }, 2000);
+      });
+    });
+  });
+} else {
       poshmarkButton.textContent = 'Log In to Poshmark';
       poshmarkButton.addEventListener('click', () => {
         chrome.tabs.create({ url: 'https://poshmark.com/login' });
       });
 
       shareToFollowersButton.style.display = 'none';
-    }
+}
   });
 });
 
@@ -60,32 +82,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       console.info(`${itemsShared[0]} items shared`);
       // Save the number of items shared in local storage
       chrome.storage.local.set({ itemsShared: itemsShared[0] });
-      
-      // Open the success.html file in a new window
-      chrome.windows.create({
-        url: 'success.html',
-        type: 'popup',
-        width: 300,
-        height: 200,
-      }, (window) => {
-        console.info('Success window opened:', window);
-      });
     }
   }
-});
-
-function sendMessageToContentScript(message) {
-  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, message, function (response) {
-      if (chrome.runtime.lastError) {
-        console.error(chrome.runtime.lastError.message);
-      } else {
-        console.log(response);
-        if (response.success) {
-          // Redirect to success page
-          chrome.tabs.update({ url: chrome.extension.getURL('success.html') });
-        }
-      }
-    });
-  });
-}
+})
+;

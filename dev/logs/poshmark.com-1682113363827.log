@@ -1,0 +1,46 @@
+content.js:2 content.js loaded
+content.js:18 Parsed closet URL: https://poshmark.com/closet/kylesawhney
+content.js:2 content.js loaded
+content.js:6 Parsing closet URL...
+content.js:12 Parsed closet URL: https://poshmark.com/closet/kylesawhney
+content.js:21 Parsed closet URL: https://poshmark.com/closet/kylesawhney
+content.js:35 Current URL: https://poshmark.com/closet/kylesawhney
+content.js:36 Closet URL: https://poshmark.com/closet/kylesawhney
+content.js:38 User is on their closet page
+advertisecast-108-adswizz.attribution.adswizz.com/fire?pixelId=e6487149-b310-44d3-8db8-f0b646fb0b0b&type=sitevisit&subtype=Sitewide&aw_0_req.gdpr=true&gtmcb=1997487023:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+connect.facebook.net/en_US/fbevents.js:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+content.js:48 Received message: Object
+content.js:50 Sharing to followers...
+content.js:61 Spanner icon: <i data-et-on-tab=​"all" data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" data-et-name=​"seller_tools" data-et-element-type=​"button" class=​"icon icon-bulk-tools">​</i>​
+content.js:68 Share to followers button: <div data-et-name=​"share_to_followers" data-et-element-type=​"button" data-et-on-screen_type=​"action_sheet" data-et-on-name=​"seller_tools_options" class=​"dropdown__link">​ Share to Followers ​</div>​
+fire:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+content.js:75 Select all checkbox: <div class=​"tile__checkbox d--if ai--c jc--c m--r--2 br--none bg--blue">​…​</div>​
+content.js:82 Green share button: <button class=​"btn btn--primary m--r--2" data-et-prop-cause=​"share_followers" data-et-prop-count=​"1" data-et-on-name=​"bulk_listing_selection" data-et-name=​"share_to_followers">​Share to Followers​</button>​
+content.js:85 Sharing to followers completed successfully.
+content.js:90 Flash message: null
+content.js:96 Error: Flash message not found
+shareItemsToFollowers @ content.js:96
+DevTools failed to load source map: Could not load content for chrome-extension://cfhdojbkjhnklbpkdaibdccddilifddb/browser-polyfill.js.map: System error: net::ERR_FILE_NOT_FOUND
+DevTools failed to load source map: Could not load content for chrome-extension://hnfanknocfeofbddgcijnmhnfnkdnaad/requestProvider.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://hnfanknocfeofbddgcijnmhnfnkdnaad/content.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/atoms.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/polyfills.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/escape.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/playback.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/record.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://hnfanknocfeofbddgcijnmhnfnkdnaad/requestProvider.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://hnfanknocfeofbddgcijnmhnfnkdnaad/content.js.map: System error: net::ERR_BLOCKED_BY_CLIENT

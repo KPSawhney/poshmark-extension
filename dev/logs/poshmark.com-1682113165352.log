@@ -1,0 +1,59 @@
+content.js:68 [168211303300166704] Script Started
+content.js:2 content.js loaded
+content.js:18 Parsed closet URL: https://poshmark.com/closet/kylesawhney
+content.js:2 content.js loaded
+content.js:6 Parsing closet URL...
+content.js:12 Parsed closet URL: https://poshmark.com/closet/kylesawhney
+content.js:21 Parsed closet URL: https://poshmark.com/closet/kylesawhney
+content.js:35 Current URL: https://poshmark.com/closet/kylesawhney
+content.js:36 Closet URL: https://poshmark.com/closet/kylesawhney
+content.js:38 User is on their closet page
+contentscript.js:39 insert
+fire:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+(index):6736 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ (index):6736
+fbevents.js:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+content.js:641 Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.
+Arguments: 
+[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 04/21/2023 14:37:07, _f: undefined, _strict: undefined, _locale: [object Object]
+Error
+    at Function.createFromInputFallback (chrome-extension://fehkmdemphhohcbggclooebcggikmodo/js/content.js:641:3220)
+    at Di (chrome-extension://fehkmdemphhohcbggclooebcggikmodo/js/content.js:641:27731)
+    at Vi (chrome-extension://fehkmdemphhohcbggclooebcggikmodo/js/content.js:641:31079)
+    at $i (chrome-extension://fehkmdemphhohcbggclooebcggikmodo/js/content.js:641:30945)
+    at Ui (chrome-extension://fehkmdemphhohcbggclooebcggikmodo/js/content.js:641:30663)
+    at Gi (chrome-extension://fehkmdemphhohcbggclooebcggikmodo/js/content.js:641:31437)
+    at Ki (chrome-extension://fehkmdemphhohcbggclooebcggikmodo/js/content.js:641:31471)
+    at s (chrome-extension://fehkmdemphhohcbggclooebcggikmodo/js/content.js:641:89)
+    at chrome-extension://fehkmdemphhohcbggclooebcggikmodo/js/content.js:402:30369
+w @ content.js:641
+kylesawhney:1 [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) <input type=​"password" placeholder=​"Password" class=​"form-control" required>​
+kylesawhney:1 [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) <input type=​"password" placeholder=​"Password" class=​"form-control" required>​
+kylesawhney:1 [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) <input type=​"password" placeholder=​"Confirm password" class=​"form-control" required>​
+content.js:48 Received message: Object
+content.js:50 Sharing to followers...
+content.js:61 Spanner icon: <i data-et-on-tab=​"all" data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" data-et-name=​"seller_tools" data-et-element-type=​"button" class=​"icon icon-bulk-tools">​</i>​
+content.js:68 Share to followers button: <div data-et-name=​"share_to_followers" data-et-element-type=​"button" data-et-on-screen_type=​"action_sheet" data-et-on-name=​"seller_tools_options" class=​"dropdown__link">​ Share to Followers ​</div>​
+fire:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+content.js:75 Select all checkbox: <div class=​"tile__checkbox d--if ai--c jc--c m--r--2 br--none bg--blue">​…​</div>​
+content.js:82 Green share button: <button class=​"btn btn--primary m--r--2" data-et-prop-cause=​"share_followers" data-et-prop-count=​"1" data-et-on-name=​"bulk_listing_selection" data-et-name=​"share_to_followers">​Share to Followers​</button>​
+content.js:85 Sharing to followers completed successfully.
+content.js:90 Flash message: null
+content.js:96 Error: Flash message not found
+shareItemsToFollowers @ content.js:96
+DevTools failed to load source map: Could not load content for chrome-extension://hnfanknocfeofbddgcijnmhnfnkdnaad/requestProvider.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://hnfanknocfeofbddgcijnmhnfnkdnaad/content.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://ofacfijogapplfgkoolmdojoieiemihl/contentscript.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://fehkmdemphhohcbggclooebcggikmodo/css/jquery.timepicker.min.css.map: System error: net::ERR_BLOCKED_BY_CLIENT
