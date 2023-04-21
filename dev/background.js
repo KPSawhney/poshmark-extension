@@ -41,6 +41,15 @@ let myClosetURL = null;
 
 // Listen for messages from content.js
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  if (message.type === 'getLoginStatus') {
+    checkPoshmarkLoginStatus(function (status) {
+      sendResponse({ status: status });
+    });
+    return true;
+  }
+  if (message.type === 'getClosetURL') {
+    sendResponse({ url: myClosetURL });
+  }
   if (message.type === 'closetURL') {
     myClosetURL = message.url;
     console.info('Received closet URL:', myClosetURL);

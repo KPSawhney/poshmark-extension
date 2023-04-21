@@ -20,15 +20,33 @@ if (closetURL) {
   chrome.runtime.sendMessage({ type: 'closetURL', url: closetURL });
   // Save the closet URL to local storage
   chrome.storage.local.set({ closetURL: closetURL });
+
+  // Check if the user is on their closet page
+  checkIsOnClosetPage(closetURL);
 } else {
   console.error('Failed to parse closet URL');
 }
 
+function checkIsOnClosetPage(closetURL) {
+  const currentURL = window.location.href;
+  console.log('Current URL:', currentURL);
+  console.log('Closet URL:', closetURL);
+  if (currentURL === closetURL) {
+    console.log('User is on their closet page');
+    chrome.runtime.sendMessage({ type: 'isOnClosetPage', isOnClosetPage: true });
+  } else {
+    console.log('User is not on their closet page');
+    chrome.runtime.sendMessage({ type: 'isOnClosetPage', isOnClosetPage: false });
+  }
+}
+
 // Listen for messages from popup.js
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  console.log('Received message:', message);
   if (message.type === 'shareToFollowers') {
     console.info('Sharing to followers...');
-    shareItemsToFollowers();
+    shareItemsToFollowers(sendResponse);
+    return true;
   }
 });
 

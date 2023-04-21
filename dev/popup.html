@@ -23,7 +23,7 @@
         width: 100px;
         margin-bottom: 20px;
       }
-      #loginStatus {
+      #status {
         font-size: 18px;
         margin-bottom: 20px;
         color: #2f2f2f;
@@ -44,13 +44,25 @@
         background-color: #d60d57;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.23);
       }
+      #successAnimation {
+        color: green;
+        font-weight: bold;
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+      }
+      #successAnimation.visible {
+        opacity: 1;
+      }
     </style>
+    <link rel="stylesheet" href="popup.css" />
+    <script src="popup.js"></script>
   </head>
   <body>
     <h1>Poshmark Helper</h1>
-    <div id="loginStatus">Checking login status...</div>
-    <button id="poshmarkButton">Open Poshmark</button>
-    <button id="shareToFollowersButton" style="display:none;">Share to Followers</button>
-    <script src="popup.js"></script>
+    <div id="status"></div>
+    <button id="openCloset">My Closet</button>
+    <button id="shareToFollowers">Share to Followers</button>
+    <div id="successAnimation" class="hidden">Shared!</div>
   </body>
 </html>
