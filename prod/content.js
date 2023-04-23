@@ -1,6 +1,27 @@
 // Log when content.js is loaded
 console.info('content.js loaded');
 
+// Spin up observer to check when new flash messages are detected, and send them to background.js to save in storage.
+const flashMessageObserver = new MutationObserver(function (flashMutations) {
+  flashMutations.forEach((flashMutation) => {
+    flashMutation.addedNodes.forEach((flashNode) => {
+      if (flashNode.id === 'flash') {
+        const flashMessageElement = flashNode.querySelector('#flash__message');
+        if (flashMessageElement) {
+          console.info('Flash message detected:', flashMessageElement.textContent.trim());
+          // Send the flash message to background.js
+          chrome.runtime.sendMessage({ type: 'flashMessage', content: flashMessageElement.textContent.trim() });
+        } else {
+          console.log('Flash container detected, but no flash message element found.');
+        }
+      }
+    });
+  });
+});
+
+// Start observing the entire document for new nodes being added
+flashMessageObserver.observe(document, { childList: true, subtree: true });
+
 // Parse the closet URL from the current Poshmark page
 function parseClosetURL() {
   console.log('Parsing closet URL...');
@@ -16,20 +37,6 @@ function parseClosetURL() {
   return null;
 }
 
-const closetURL = parseClosetURL();
-if (closetURL) {
-  console.info('Parsed closet URL:', closetURL);
-  // Send the closet URL to background.js
-  chrome.runtime.sendMessage({ type: 'closetURL', url: closetURL });
-  // Save the closet URL to local storage
-  chrome.storage.local.set({ closetURL: closetURL });
-
-  // Check if the user is on their closet page
-  checkIsOnClosetPage(closetURL);
-} else {
-  console.error('Failed to parse closet URL');
-}
-
 function checkIsOnClosetPage(closetURL) {
   const currentURL = window.location.href;
   console.log('Current URL:', currentURL);
@@ -43,6 +50,8 @@ function checkIsOnClosetPage(closetURL) {
   }
 }
 
+// Spin up listeners.
+
 // Listen for messages from popup.js
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   console.log('Received message:', message);
@@ -53,82 +62,83 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   }
 });
 
-// ...
-
 async function shareItemsToFollowers(callback) {
-  // Step 1: Click on the spanner icon
-  const spannerIcon = document.querySelector('i.icon.icon-bulk-tools');
-  console.log('Spanner icon:', spannerIcon);
-  if (spannerIcon) {
+  try {
+    // Step 1: Click on the spanner icon
+    const spannerIcon = document.querySelector('i.icon.icon-bulk-tools');
+    console.log('Spanner icon:', spannerIcon);
+    if (!spannerIcon) {
+      throw new Error('Error: Spanner icon not found');
+    }
     spannerIcon.click();
 
     // Step 2: Click share to followers dropdown choice
     await new Promise(resolve => setTimeout(resolve, 1000)); // wait for 1 second
     const shareToFollowersButton = document.querySelector('div[data-et-name="share_to_followers"]');
     console.log('Share to followers button:', shareToFollowersButton);
-    if (shareToFollowersButton) {
-      shareToFollowersButton.click();
-
-      // Step 3: Click the checkbox to select all clothes after the page reloads
-      await new Promise(resolve => setTimeout(resolve, 1000)); // wait for 1 second
-      const selectAllCheckbox = document.querySelector('.tile__checkbox');
-      console.log('Select all checkbox:', selectAllCheckbox);
-      if (selectAllCheckbox) {
-        selectAllCheckbox.click();
-
-        // Step 4: Click the green Share Followers button
-        await new Promise(resolve => setTimeout(resolve, 1000)); // wait for 1 second
-        const greenShareButton = document.querySelector('button[data-et-name="share_to_followers"]');
-        console.log('Green share button:', greenShareButton);
-        if (greenShareButton) {
-          greenShareButton.click();
-          console.info('Sharing to followers completed successfully.');
-
-          // Step 5: Log the flash message
-          await new Promise(resolve => setTimeout(resolve, 1000)); // wait for 1 second
-          const flashMessage = document.querySelector('#flash .flash__message');
-          console.log('Flash message:', flashMessage);
-          if (flashMessage) {
-            console.info('Flash message:', flashMessage.textContent.trim());
-            // Call the callback function with the success message
-            callback(flashMessage.textContent.trim());
-          } else {
-            console.error('Error: Flash message not found');
-            callback('Error: Flash message not found');
-          }
-        } else {
-          console.error('Error: Green Share Followers button not found');
-        }
-      } else {
-        console.error('Error: Select All checkbox not found');
-      }
-    } else {
-      console.error('Error: Share to Followers dropdown choice not found');
+    if (!shareToFollowersButton) {
+      throw new Error('Error: Share to Followers dropdown choice not found');
     }
-  } else {
-    console.error('Error: Spanner icon not found');
+    shareToFollowersButton.click();
+
+    // Step 3: Click the checkbox to select all clothes after the page reloads
+    await new Promise(resolve => setTimeout(resolve, 1000)); // wait for 1 second
+    const selectAllCheckbox = document.querySelector('.tile__checkbox');
+    console.log('Select all checkbox:', selectAllCheckbox);
+    if (!selectAllCheckbox) {
+      throw new Error('Error: Select All checkbox not found');
+    }
+    selectAllCheckbox.click();
+
+    // Step 4: Click the green share button
+    await new Promise(resolve => setTimeout(resolve, 1000)); // wait for 1 second
+    const greenShareButton = document.querySelector('button[data-et-name="share_to_followers"]');
+    console.log('Green share button:', greenShareButton);
+    if (!greenShareButton) {
+      throw new Error('Error: Green share button not found');
+    }
+    greenShareButton.click();
+    console.log('Green share button clicked successfully.');
+
+    // Detect the flash message
+    const flashMessage = await waitForFlashMessage('Flash message not detected after green share button clicked within specified time');
+    const itemsShared = flashMessage.textContent.match(/\d+/);
+    if (itemsShared) {
+      console.info(`${itemsShared[0]} items shared`);
+      // Save the number of items shared in local storage
+      chrome.storage.local.set({ itemsShared: itemsShared[0] });
+      callback(flashMessage.textContent.trim());
+    }
+  } catch (error) {
+    console.error(error);
+    callback(error.message);
   }
 }
 
-const observer = new MutationObserver(function (mutations) {
-  mutations.forEach((mutation) => {
-    mutation.addedNodes.forEach((node) => {
-        // Add a new mutation observer to watch for the flash message
-        console.log('New node added:', node);
-        const flashMessageObserver = new MutationObserver(function (flashMutations) {
-          flashMutations.forEach((flashMutation) => {
-            flashMutation.addedNodes.forEach((flashNode) => {
-              if (flashNode.id === 'flash' && flashNode.querySelector('.flash__message')) {
-                console.info('Flash message detected:', flashNode.querySelector('.flash__message').textContent.trim());
-                // Send the flash message to background.js
-                chrome.runtime.sendMessage({ type: 'flashMessage', content: flashNode.querySelector('.flash__message').textContent.trim() });
-              }
-            });
-          });
-        });
-
-        // Start observing the entire document for new nodes being added
-        flashMessageObserver.observe(document, { childList: true, subtree: true });
+async function waitForFlashMessage(errorMessage) {
+  return new Promise((resolve, reject) => {
+    const flashMessageObserver = new MutationObserver(async (mutations) => {
+      mutations.forEach(async (mutation) => {
+        if (mutation.addedNodes.length > 0) {
+          console.log('New node added:', mutation.addedNodes[0]);
+          const flashMessage = mutation.addedNodes[0].querySelector('span.flash__message');
+          if (flashMessage) {
+            console.log('Flash message detected after green share button clicked:', flashMessage.textContent.trim());
+            flashMessageObserver.disconnect();
+            clearTimeout(flashTimeout);
+            resolve(flashMessage);
+          }
+        }
       });
+    });
+
+    // Observe for new nodes added to the body
+    flashMessageObserver.observe(document.body, { childList: true });
+
+    // Set a timeout to handle cases when the flash message is not detected
+    const flashTimeout = setTimeout(() => {
+      flashMessageObserver.disconnect();
+      reject(new Error(errorMessage));
+    }, 5000); // You can adjust the timeout duration (in milliseconds) as needed
   });
-});
+}

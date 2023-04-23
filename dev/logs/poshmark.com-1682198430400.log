@@ -1,0 +1,996 @@
+content.js:2 content.js loaded
+content.js:6 Parsing closet URL...
+content.js:12 Parsed closet URL: https://poshmark.com/closet/kylesawhney
+content.js:21 Parsed closet URL: https://poshmark.com/closet/kylesawhney
+content.js:35 Current URL: https://poshmark.com/closet/kylesawhney
+content.js:36 Closet URL: https://poshmark.com/closet/kylesawhney
+content.js:38 User is on their closet page
+content.js:114 New node added: <script src=​"chrome-extension:​/​/​mooikfkahbdckldjjndioackbalphokd/​assets/​prompt.js">​</script>​
+content.js:124 Incoming mutation: MutationRecordaddedNodes: NodeList [script]attributeName: nullattributeNamespace: nullnextSibling: nulloldValue: nullpreviousSibling: metaremovedNodes: NodeList []target: headtype: "childList"[[Prototype]]: MutationRecord
+content.js:2 content.js loaded
+content.js:6 Parsing closet URL...
+content.js:12 Parsed closet URL: https://poshmark.com/closet/kylesawhney
+content.js:21 Parsed closet URL: https://poshmark.com/closet/kylesawhney
+content.js:35 Current URL: https://poshmark.com/closet/kylesawhney
+content.js:36 Closet URL: https://poshmark.com/closet/kylesawhney
+content.js:38 User is on their closet page
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​bat.bing.com/​bat.js">​</script>​
+content.js:114 New node added: <meta http-equiv=​"origin-trial" content=​"A727AcAeLCei/​ZogJHBlJUS63SxP6AeIROo7qXrkjrxkoxBu0eSSmypAHmGYwk4HjBMQp5nxCFODzfVnUIe31AQAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjg4MDgzMTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​795391481/​?random=1682197923748&cv=11&fst=1682197923748&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <iframe allow=​"join-ad-interest-group" data-tagging-id=​"AW-795391481" data-load-time=​"1682197923753" height=​"0" width=​"0" style=​"display:​ none;​ visibility:​ hidden;​" src=​"https:​/​/​td.doubleclick.net/​td/​rul/​795391481?random=1682197923748&cv=11&fst=1682197923748&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details">​…​</iframe>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​1008471087/​?random=1682197923765&cv=11&fst=1682197923765&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <iframe allow=​"join-ad-interest-group" data-tagging-id=​"AW-1008471087" data-load-time=​"1682197923766" height=​"0" width=​"0" style=​"display:​ none;​ visibility:​ hidden;​" src=​"https:​/​/​td.doubleclick.net/​td/​rul/​1008471087?random=1682197923765&cv=11&fst=1682197923765&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details">​…​</iframe>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​780917115/​?random=1682197923778&cv=11&fst=1682197923778&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <iframe allow=​"join-ad-interest-group" data-tagging-id=​"AW-780917115" data-load-time=​"1682197923779" height=​"0" width=​"0" style=​"display:​ none;​ visibility:​ hidden;​" src=​"https:​/​/​td.doubleclick.net/​td/​rul/​780917115?random=1682197923778&cv=11&fst=1682197923778&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details">​…​</iframe>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​399307491/​?random=1682197923811&cv=11&fst=1682197923811&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <iframe allow=​"join-ad-interest-group" data-tagging-id=​"AW-399307491" data-load-time=​"1682197923813" height=​"0" width=​"0" style=​"display:​ none;​ visibility:​ hidden;​" src=​"https:​/​/​td.doubleclick.net/​td/​rul/​399307491?random=1682197923811&cv=11&fst=1682197923811&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details">​…​</iframe>​
+content.js:114 New node added: <script attributionsrc type=​"text/​javascript" async src=​"https:​/​/​www.googleadservices.com/​pagead/​conversion/​795391481/​?random=1682197923827&cv=11&fst=1682197923827&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&label=gQTVCJX05PACEPnrovsC&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&value=0&bttype=purchase&capi=1&auid=1486269122.1681264929&fledge=1&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <iframe allow=​"join-ad-interest-group" data-tagging-id=​"AW-795391481/​gQTVCJX05PACEPnrovsC" data-load-time=​"1682197923846" height=​"0" width=​"0" style=​"display:​ none;​ visibility:​ hidden;​" src=​"https:​/​/​td.doubleclick.net/​td/​rul/​795391481?random=1682197923827&cv=11&fst=1682197923827&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&label=gQTVCJX05PACEPnrovsC&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&value=0&bttype=purchase&capi=1&auid=1486269122.1681264929&fledge=1">​…​</iframe>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​10801271564/​?random=1682197923854&cv=11&fst=1682197923854&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <iframe allow=​"join-ad-interest-group" data-tagging-id=​"AW-10801271564" data-load-time=​"1682197923855" height=​"0" width=​"0" style=​"display:​ none;​ visibility:​ hidden;​" src=​"https:​/​/​td.doubleclick.net/​td/​rul/​10801271564?random=1682197923854&cv=11&fst=1682197923854&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details">​…​</iframe>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​10850172793/​?random=1682197923919&cv=11&fst=1682197923919&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <iframe allow=​"join-ad-interest-group" data-tagging-id=​"AW-10850172793" data-load-time=​"1682197923921" height=​"0" width=​"0" style=​"display:​ none;​ visibility:​ hidden;​" src=​"https:​/​/​td.doubleclick.net/​td/​rul/​10850172793?random=1682197923919&cv=11&fst=1682197923919&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details">​…​</iframe>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script async src=​"https:​/​/​www.paypal.com/​tagmanager/​pptm.js?id=43251cb2-1094-11e8-b8a5-0535beebfa8f">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script async src=​"https:​/​/​connect.facebook.net/​en_US/​fbevents.js">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: <noscript>​…​</noscript>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​window.cnxDataLayer=[];function cnxtag(){cnxDataLayer.push(arguments)};​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id src=​"https:​/​/​js.cnnx.link/​roi/​cnxtag-min.js?id=302351">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script async src=​"https:​/​/​www.paypal.com/​tagmanager/​pptm.js?t=xo&id=poshmark.com">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id src=​"https:​/​/​tag.simpli.fi/​sifitag/​53d16bd0-8abe-013b-5c33-0cc47a1f72a4?referer=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​www.googletagmanager.com/​gtag/​js?id=G-S34VRNNVTV&l=dataLayer&cx=c">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​www.google-analytics.com/​analytics.js">​</script>​
+content.js:124 Incoming mutation: MutationRecordaddedNodes: NodeList [text]0: textlength: 1[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: ObjectattributeName: nullattributeNamespace: nullnextSibling: nulloldValue: nullpreviousSibling: div.progressremovedNodes: NodeList []target: bodytype: "childList"[[Prototype]]: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <div class=​"col-x12 col-l6 col-s8 p--2 cursor--pointer" style=​"visibility:​ visible;​">​<div class=​"card card--small">​<a data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" data-et-prop-listing_id=​"643f297e845f84c128c4cfc5" data-et-prop-location=​"listing_tile" data-et-prop-unit_position=​"0" data-et-element-type=​"image" data-et-name=​"listing" class=​"tile__covershot tile__bulk-active__image no--select" target>​…​</a>​<div class=​"tile__non-image-bulk__opacity">​…​</div>​</div>​<!----><!----></div>​
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <div class=​"d--fl ai--c m--l--1">​…​</div>​
+content.js:114 New node added: <div class=​"social-action-bar tile__social-actions">​…​</div>​
+content.js:114 New node added: <a href=​"/​listing/​Meet-your-Posher-Kyle-643f297e845f84c128c4cfc5" class=​"tile__covershot no--select" data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" data-et-prop-listing_id=​"643f297e845f84c128c4cfc5" data-et-prop-location=​"listing_tile" data-et-prop-unit_position=​"0" data-et-element-type=​"image" data-et-name=​"listing" target>​…​</a>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <div data-et-prop-unit_position=​"0" data-et-name=​"like" data-et-element-type=​"button" data-et-prop-listing_id=​"643f297e845f84c128c4cfc5" data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" class=​"d--fl ai--c cursor--pointer social-action-bar__action social-action-bar__like">​…​</div>​
+content.js:114 New node added: <div class=​"d--fl ai--c jc--sb">​…​</div>​
+content.js:114 New node added: <div data-et-prop-unit_position=​"0" data-et-name=​"share" data-et-element-type=​"button" data-et-prop-listing_id=​"643f297e845f84c128c4cfc5" data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" class=​"d--fl ai--c social-action-bar__action social-action-bar__share">​…​</div>​
+content.js:114 New node added: <picture title>​<source srcset=​"https:​/​/​di2ponv0v5otw.cloudfront.net/​posts/​2023/​04/​18/​643f297e845f84c128c4cfc5/​s_643f297e845f84c128c4cfcd.jpg" type=​"image/​jpeg">​<img src=​"https:​/​/​di2ponv0v5otw.cloudfront.net/​posts/​2023/​04/​18/​643f297e845f84c128c4cfc5/​s_643f297e845f84c128c4cfcd.jpg" alt=​"Meet your Posher, Kyle" title class=​"ovf--h d--b">​</picture>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+advertisecast-108-adswizz.attribution.adswizz.com/fire?pixelId=e6487149-b310-44d3-8db8-f0b646fb0b0b&type=sitevisit&subtype=Sitewide&aw_0_req.gdpr=true&gtmcb=516486127:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+VM316:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM316:161
+VM316:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM316:161
+VM316:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM316:161
+VM316:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM316:161
+VM316:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM316:161
+VM316:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM316:161
+VM316:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM316:161
+content.js:114 New node added: <div class=​"adsbox">​&nbsp;​</div>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+connect.facebook.net/en_US/fbevents.js:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​www.paypalobjects.com/​muse/​muse.js">​</script>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <script src=​"https:​/​/​bat.bing.com/​p/​action/​11008777.js" type=​"text/​javascript" async data-ueto=​"ueto_1bdff24e55">​</script>​
+content.js:114 New node added: <div style=​"width:​0px;​ height:​0px;​ display:​none;​ visibility:​hidden;​" id=​"batBeacon266621991824">​…​</div>​
+content.js:114 New node added: <img style=​"width:​0px;​ height:​0px;​ display:​none;​ visibility:​hidden;​" id=​"batBeacon869829512914" width=​"0" height=​"0" alt src=​"https:​/​/​bat.bing.com/​action/​0?ti=11008777&tm=gtm002&Ver=2&mid=f5f3d794-8a45-4ecd-9860-f20a727f1f9a&sid=642326f0de4111ed826d2df6d39f60c2&vid=080f6a00d8d611eda364a36e8e0ccfdd&vids=0&msclkid=N&pi=918639831&lg=en-US&sw=1440&sh=900&sc=30&tl=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&p=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&r=&lt=780&evt=pageLoad&sv=1&rn=814744">​
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <iframe id=​"paypal-offers--iframe-8e111ffe-10ee-4929-96b6-74962eb2725f" src=​"https:​/​/​www.paypalobjects.com/​muse/​analytics/​index.html#frameId=8e111ffe-10ee-4929-96b6-74962eb2725f&propertyId=FDJJJ2Y4U4EMY-1&flow=visitor-info&variant=analytics&mrid=FDJJJ2Y4U4EMY&isMobileEnabled=true&isDesktopEnabled=true&shouldCheckCountry=true&mobileVariant=analytics&mobileFlow=visitor-info" data-merchant=​"FDJJJ2Y4U4EMY-1" style=​"z-index:​ 2147483647;​ display:​ none;​">​…​</iframe>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <script async src=​"https:​/​/​i.simpli.fi/​p?cid=402873&cb=sifi_att_2013069525248._hp">​</script>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:48 Received message: Object
+content.js:50 Sharing to followers...
+content.js:59 Spanner icon: <i data-et-on-tab=​"all" data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" data-et-name=​"seller_tools" data-et-element-type=​"button" class=​"icon icon-bulk-tools">​</i>​
+content.js:66 Share to followers button: <div data-et-name=​"share_to_followers" data-et-element-type=​"button" data-et-on-screen_type=​"action_sheet" data-et-on-name=​"seller_tools_options" class=​"dropdown__link">​ Share to Followers ​</div>​
+content.js:114 New node added: <script charset=​"utf-8" src=​"https:​/​/​d2gjrq7hs8he14.cloudfront.net/​webpack4/​832.7771c6da3126d177e3f8.js">​</script>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <div id=​"hud__backdrop">​…​</div>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​795391481/​?random=1682197927721&cv=11&fst=1682197927721&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​1008471087/​?random=1682197927722&cv=11&fst=1682197927722&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​780917115/​?random=1682197927723&cv=11&fst=1682197927723&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​399307491/​?random=1682197927725&cv=11&fst=1682197927725&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script attributionsrc type=​"text/​javascript" async src=​"https:​/​/​www.googleadservices.com/​pagead/​conversion/​795391481/​?random=1682197927726&cv=11&fst=1682197927726&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&label=gQTVCJX05PACEPnrovsC&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&value=0&bttype=purchase&capi=1&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​10801271564/​?random=1682197927731&cv=11&fst=1682197927731&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​10850172793/​?random=1682197927732&cv=11&fst=1682197927732&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script async src=​"https:​/​/​www.paypal.com/​tagmanager/​pptm.js?id=43251cb2-1094-11e8-b8a5-0535beebfa8f">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script async src=​"https:​/​/​www.paypal.com/​tagmanager/​pptm.js?t=xo&id=poshmark.com">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id src=​"https:​/​/​tag.simpli.fi/​sifitag/​53d16bd0-8abe-013b-5c33-0cc47a1f72a4?referer=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney">​</script>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <div class=​"bulk-mode__header__container d--fl fd--c br--bottom br--light-gray jc--c bg--white m--b--4" data-timeout-i-d=​"176" style=​"position:​ sticky;​ z-index:​ 2;​ vertical-align:​ top;​ top:​ 50px;​ bottom:​ unset;​">​…​</div>​
+content.js:114 New node added: <div class=​"d--fl p--l--2 p--t--5 p--b--2">​…​</div>​
+content.js:114 New node added: <div class=​"tile__title tc--b">​ Meet your Posher, Kyle ​</div>​
+content.js:114 New node added: <span class=​"m--t--1 tile__details__pipe__size ellipses">​ Size: OS ​</span>​
+content.js:114 New node added: <span class=​"tile__details__pipe__brand ellipses m--t--1">​ Meet the Posher ​</span>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <div class=​"likeFont tc--g">​ 0 Likes ​</div>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <li class=​"dropdown__menu__item">​…​</li>​
+content.js:114 New node added: <li class=​"dropdown__menu__item">​…​</li>​
+content.js:114 New node added: <a data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" data-et-prop-listing_id=​"643f297e845f84c128c4cfc5" data-et-prop-location=​"listing_tile" data-et-prop-unit_position=​"0" data-et-element-type=​"image" data-et-name=​"listing" class=​"tile__covershot tile__bulk-active__image no--select" target>​…​</a>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+fire:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+content.js:114 New node added: "Kyle's Closet (@kylesawhney) | Poshmark"
+content.js:114 New node added: <script data-vue-meta=​"1" data-vmid=​"ldjson-schema-carousel" type=​"application/​ld+json">​…​</script>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:73 Select all checkbox: <div class=​"tile__checkbox d--if ai--c jc--c m--r--2 br--none bg--blue">​…​</div>​
+content.js:114 New node added: <i class=​"checkmark checkmark--white checkmark--medium-small">​</i>​
+content.js:114 New node added: <i class=​"checkmark checkmark--white checkmark--medium-small">​</i>​
+content.js:114 New node added: "1 Listing Selected"
+content.js:114 New node added: <button class=​"btn btn--primary m--r--2" data-et-prop-cause=​"share_followers" data-et-prop-count=​"1" data-et-on-name=​"bulk_listing_selection" data-et-name=​"share_to_followers">​Share to Followers​</button>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:80 Green share button: <button class=​"btn btn--primary m--r--2" data-et-prop-cause=​"share_followers" data-et-prop-count=​"1" data-et-on-name=​"bulk_listing_selection" data-et-name=​"share_to_followers">​Share to Followers​</button>​
+content.js:83 Sharing to followers completed successfully.
+content.js:114 New node added: <div class=​"grid-page__click-overlay">​</div>​
+content.js:114 New node added: <div class=​"grid-page__blur-overlay">​…​</div>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <div class=​"circle-loader circle-loader--small m--r--2">​</div>​
+content.js:114 New node added: <div class=​"tc--b">​ Sharing... ​</div>​
+content.js:114 New node added: "Sharing 1/1 listings..."
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: "Kyle's Closet (@kylesawhney) | Poshmark"
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <script charset=​"utf-8" src=​"https:​/​/​d2gjrq7hs8he14.cloudfront.net/​webpack4/​385.edb25b3595ccd7812d67.js">​</script>​
+content.js:114 New node added: <a href=​"/​closet/​kylesawhney/​about-me" data-et-name=​"about_me" data-et-element-type=​"button" class=​"btn btn--tertiary tr--capitalize m--l--4">​…​</a>​
+content.js:114 New node added: <div aria-haspopup=​"true" tabindex=​"0" data-test=​"dropdown" class=​"dropdown" items=​"[object Object]​,[object Object]​,[object Object]​" selectorclass=​"d--fl" menuclass=​"m--t--4">​…​</div>​
+content.js:114 New node added: <div class=​"desktop-grid-filter">​…​</div>​
+content.js:114 New node added: <div>​…​</div>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <style type=​"text/​css">​…​</style>​
+content.js:114 New node added: .tile{border-radius:12px;overflow:hidden}.tile-shimmer{padding:8px}.tile--highlight{border:2px solid #822432}.tile--no-margin{margin-left:-6px}.tile__details{font-size:11px !important}.tile__covershot{display:block;position:relative;margin:-12px -12px 12px -12px}.tile__inventory-tag{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important;-ms-flex-pack:center;-webkit-box-pack:center;justify-content:center;-ms-flex-align:center;-webkit-box-align:center;align-items:center;position:absolute;bottom:1rem;right:0}.tile__title{max-height:40px;overflow:hidden}@supports (-webkit-line-clamp: 2){.tile__title{-o-text-overflow:ellipsis;text-overflow:ellipsis;display:-webkit-box;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical}}@media only screen and (max-device-width: 767px), (max-device-height: 480px) and (orientation: landscape){.tile__title{max-height:32px}}.item__details{height:88px}@media only screen and (max-device-width: 767px), (max-device-height: 480px) and (orientation: landscape){.item__details{height:72px}}.title__condition__container{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;-webkit-box-pack:justify;justify-content:space-between;-ms-flex-align:start;-webkit-box-align:start;align-items:flex-start}.tile__details__pipe__size{display:inline-block;vertical-align:top;max-width:12ch;padding-right:8px;font-size:13px}.tile__details__pipe__brand{display:inline-block;vertical-align:top;padding-left:8px;border-left:solid 1px #e6e2df;font-size:13px}.tile__creator{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-align:center;-webkit-box-align:center;align-items:center;font-size:12px;margin-top:16px}@media only screen and (max-device-width: 767px), (max-device-height: 480px) and (orientation: landscape){.tile__creator{margin-top:12px}}.tile__social-actions{border-top:1px solid #f5f2ee;margin-top:8px;padding:8px 12px 0 12px;font-size:12px}.tile__shimmer--title{width:50%}.tile__shimmer--text{width:60%;margin-top:8px}.tile__shimmer--sub-text{width:30%;margin-top:8px}.tile__shimmer__social-action{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;-webkit-box-pack:justify;justify-content:space-between;margin-top:8px;padding-top:8px;border-top:1px solid #f5f2ee}.tile__badge-overlay{position:absolute;top:0;bottom:0;left:0;right:0;z-index:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;-ms-flex-align:end;-webkit-box-align:end;align-items:flex-end;color:#fcfbfb;background:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), color-stop(27.21%, rgba(0,0,0,0)));background:-o-linear-gradient(top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 27.21%);background:linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 27.21%)}.tile__shipping-discount-icon{position:absolute;z-index:1;top:10px;left:8px}.tile__checkbox-overlay{position:absolute;bottom:0;padding:8px 8px;left:0;width:100%;z-index:1;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-align:center;-webkit-box-align:center;align-items:center}.tile__bulk-status-overlay{position:absolute;bottom:0;left:0;width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-align:center;-webkit-box-align:center;align-items:center;-ms-flex-pack:center;-webkit-box-pack:center;justify-content:center}.tile__checkbox{width:24px;height:24px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.2);box-shadow:0 1px 2px rgba(0,0,0,0.2);border-radius:2px;border:1px solid #c1bfbc;background-color:#fcfbfb}.tile__checkbox--disabled{background-color:#9b9691}.tile__bulk-pricing-bottom{width:100%;background-color:#fdf9e2}.tile__listing-video-icon{position:absolute;z-index:1;top:8px;right:8px}.tile__listing-video-icon--small{position:absolute;z-index:1;top:6px;right:6px}.tile__promoted-tag{position:absolute;bottom:0;right:0;padding:4px;background:rgba(0,0,0,0.3);color:#fcfbfb}
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <div id=​"flash">​…​</div>​
+content.js:124 Incoming mutation: MutationRecord
+content.js:130 Flash message detected: 1 listing shared to followers.
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: <div class=​"col-x12 col-l6 col-s8 p--2">​…​</div>​
+content.js:114 New node added: <div class=​"hide">​</div>​
+content.js:114 New node added: <div>​…​</div>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+content.js:114 New node added: "Kyle's Closet (@kylesawhney) | Poshmark"
+content.js:124 Incoming mutation: MutationRecordaddedNodes: NodeList [text]attributeName: nullattributeNamespace: nullnextSibling: nulloldValue: nullpreviousSibling: nullremovedNodes: NodeList [text]target: titletype: "childList"[[Prototype]]: MutationRecordaddedNodes: (...)attributeName: (...)attributeNamespace: (...)nextSibling: (...)oldValue: (...)previousSibling: (...)removedNodes: (...)target: (...)type: (...)constructor: ƒ MutationRecord()Symbol(Symbol.toStringTag): "MutationRecord"get addedNodes: ƒ addedNodes()get attributeName: ƒ attributeName()get attributeNamespace: ƒ attributeNamespace()get nextSibling: ƒ nextSibling()get oldValue: ƒ oldValue()get previousSibling: ƒ previousSibling()get removedNodes: ƒ removedNodes()get target: ƒ target()get type: ƒ type()[[Prototype]]: Object
+content.js:88 Flash message: null
+content.js:94 Error: Flash message not found
+shareItemsToFollowers @ content.js:94
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord
+content.js:124 Incoming mutation: MutationRecord
+DevTools failed to load source map: Could not load content for chrome-extension://cfhdojbkjhnklbpkdaibdccddilifddb/browser-polyfill.js.map: System error: net::ERR_FILE_NOT_FOUND
+DevTools failed to load source map: Could not load content for chrome-extension://hnfanknocfeofbddgcijnmhnfnkdnaad/requestProvider.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://hnfanknocfeofbddgcijnmhnfnkdnaad/content.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/atoms.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/polyfills.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/escape.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/playback.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/record.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://hnfanknocfeofbddgcijnmhnfnkdnaad/requestProvider.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for chrome-extension://hnfanknocfeofbddgcijnmhnfnkdnaad/content.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div#batBeacon266621991824, …}
+content.js:48 Received message: {type: 'shareToFollowers'}
+content.js:50 Sharing to followers...
+content.js:59 Spanner icon: <i data-et-on-tab=​"all" data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" data-et-name=​"seller_tools" data-et-element-type=​"button" class=​"icon icon-bulk-tools">​</i>​
+content.js:66 Share to followers button: <div data-et-name=​"share_to_followers" data-et-element-type=​"button" data-et-on-screen_type=​"action_sheet" data-et-on-name=​"seller_tools_options" class=​"dropdown__link">​ Share to Followers ​</div>​
+content.js:114 New node added: <div id=​"hud__backdrop">​…​</div>​
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div#hud__backdrop, …}
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​795391481/​?random=1682198112467&cv=11&fst=1682198112467&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​1008471087/​?random=1682198112473&cv=11&fst=1682198112473&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​780917115/​?random=1682198112477&cv=11&fst=1682198112477&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​399307491/​?random=1682198112480&cv=11&fst=1682198112480&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script attributionsrc type=​"text/​javascript" async src=​"https:​/​/​www.googleadservices.com/​pagead/​conversion/​795391481/​?random=1682198112483&cv=11&fst=1682198112483&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&label=gQTVCJX05PACEPnrovsC&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&value=0&bttype=purchase&capi=1&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​10801271564/​?random=1682198112491&cv=11&fst=1682198112491&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​10850172793/​?random=1682198112495&cv=11&fst=1682198112495&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script async src=​"https:​/​/​www.paypal.com/​tagmanager/​pptm.js?id=43251cb2-1094-11e8-b8a5-0535beebfa8f">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script async src=​"https:​/​/​www.paypal.com/​tagmanager/​pptm.js?t=xo&id=poshmark.com">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id src=​"https:​/​/​tag.simpli.fi/​sifitag/​53d16bd0-8abe-013b-5c33-0cc47a1f72a4?referer=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney">​</script>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <div class=​"bulk-mode__header__container d--fl fd--c br--bottom br--light-gray jc--c bg--white m--b--4" data-timeout-i-d=​"247" style=​"position:​ sticky;​ z-index:​ 2;​ vertical-align:​ top;​ top:​ 50px;​ bottom:​ unset;​">​…​</div>​
+content.js:114 New node added: <div class=​"d--fl p--l--2 p--t--5 p--b--2">​…​</div>​
+content.js:114 New node added: <li class=​"dropdown__menu__item">​…​</li>​
+content.js:114 New node added: <li class=​"dropdown__menu__item">​…​</li>​
+content.js:114 New node added: <div class=​"tile__title tc--b">​ Meet your Posher, Kyle ​</div>​
+content.js:114 New node added: <span class=​"m--t--1 tile__details__pipe__size ellipses">​ Size: OS ​</span>​
+content.js:114 New node added: <span class=​"tile__details__pipe__brand ellipses m--t--1">​ Meet the Posher ​</span>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <div class=​"likeFont tc--g">​ 0 Likes ​</div>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <a data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" data-et-prop-listing_id=​"643f297e845f84c128c4cfc5" data-et-prop-location=​"listing_tile" data-et-prop-unit_position=​"0" data-et-element-type=​"image" data-et-name=​"listing" class=​"tile__covershot tile__bulk-active__image no--select" target>​…​</a>​
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: style, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: ul.dropdown__menu.dropdown__menu--right, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: li.dropdown__menu__item, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: ul.dropdown__menu.dropdown__menu--right, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: li.dropdown__menu__item, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.title__condition__container, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.title__condition__container, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile__title.tc--b, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.m--t--1.tc--g, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.m--t--1.tc--g, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: span.m--t--1.tile__details__pipe__size.ellipses, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.m--t--1.tc--g, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: span.tile__details__pipe__brand.ellipses.m--t--1, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.m--t--1.tc--g, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: span.tile__details__pipe__brand.ellipses.m--t--1, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.likeFont.tc--g, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.card.card--small, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: a.tile__covershot.no--select, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.card.card--small, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: null, …}
+advertisecast-108-adswizz.attribution.adswizz.com/fire?pixelId=e6487149-b310-44d3-8db8-f0b646fb0b0b&type=sitevisit&subtype=Sitewide&aw_0_req.gdpr=true&gtmcb=1971735422:1     GET https://advertisecast-108-adswizz.attribution.adswizz.com/fire?pixelId=e6487149-b310-44d3-8db8-f0b646fb0b0b&type=sitevisit&subtype=Sitewide&aw_0_req.gdpr=true&gtmcb=1971735422 net::ERR_BLOCKED_BY_CLIENT
+Image (async)
+pc @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:103
+WD @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:462
+(anonymous) @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:541
+Ve @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:142
+e @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:360
+(anonymous) @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:91
+(anonymous) @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:361
+(anonymous) @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:361
+Vt @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:362
+du @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:366
+fv @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:382
+iv @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:387
+b.push @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:390
+b.push @ js?id=G-S34VRNNVTV&l=dataLayer&cx=c:387
+value @ app.8c94f9792d03937b1f7c.js:2
+value @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+p.commit @ vue_router.d1b3f93f9ec251c951e8.js:2
+commit @ vue_router.d1b3f93f9ec251c951e8.js:2
+setEventTrackingAttributes @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+p.dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+(anonymous) @ closet.ceda8463410d6ffb099a.js:2
+y @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+o @ app.8c94f9792d03937b1f7c.js:2
+s @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+r @ core_js_pure.5b90a7cbb8fd129ee42f.js:1
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ closet.ceda8463410d6ffb099a.js:2
+_n.run @ vue.08ae359a9f2b085b22e0.js:2
+yn @ vue.08ae359a9f2b085b22e0.js:2
+(anonymous) @ vue.08ae359a9f2b085b22e0.js:2
+Qe @ vue.08ae359a9f2b085b22e0.js:2
+Promise.then (async)
+We @ vue.08ae359a9f2b085b22e0.js:2
+it @ vue.08ae359a9f2b085b22e0.js:2
+(anonymous) @ vue.08ae359a9f2b085b22e0.js:2
+_n.update @ vue.08ae359a9f2b085b22e0.js:2
+pe.notify @ vue.08ae359a9f2b085b22e0.js:2
+set @ vue.08ae359a9f2b085b22e0.js:2
+Ee @ vue.08ae359a9f2b085b22e0.js:2
+ClearBulkSelections @ 61.b16a2c66988f006c9cc5.js:1
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+p._withCommit @ vue_router.d1b3f93f9ec251c951e8.js:2
+p.commit @ vue_router.d1b3f93f9ec251c951e8.js:2
+commit @ vue_router.d1b3f93f9ec251c951e8.js:2
+o.commit @ vue_router.d1b3f93f9ec251c951e8.js:2
+toggleIsBulkModeActive @ 61.b16a2c66988f006c9cc5.js:1
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+p.dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+o.dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+(anonymous) @ 61.b16a2c66988f006c9cc5.js:1
+y @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+o @ app.8c94f9792d03937b1f7c.js:2
+s @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+r @ core_js_pure.5b90a7cbb8fd129ee42f.js:1
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ 61.b16a2c66988f006c9cc5.js:1
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+p.dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+o.dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+k.forEach.n.<computed> @ vue_router.d1b3f93f9ec251c951e8.js:2
+(anonymous) @ 303.4d6d78d18a2f068ed5f5.js:1
+setTimeout (async)
+selectBulkModeItem @ 303.4d6d78d18a2f068ed5f5.js:1
+click @ 303.4d6d78d18a2f068ed5f5.js:1
+Ke @ vue.08ae359a9f2b085b22e0.js:2
+n @ vue.08ae359a9f2b085b22e0.js:2
+o._wrapper @ vue.08ae359a9f2b085b22e0.js:2
+shareItemsToFollowers @ content.js:68
+await in shareItemsToFollowers (async)
+(anonymous) @ content.js:51
+VM588:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM588:161
+VM621:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM621:161
+VM652:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM652:161
+VM683:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM683:161
+VM714:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM714:161
+VM745:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM745:161
+VM776:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM776:161
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:73 Select all checkbox: <div class=​"tile__checkbox d--if ai--c jc--c m--r--2 br--none bg--blue">​…​</div>​
+content.js:114 New node added: <i class=​"checkmark checkmark--white checkmark--medium-small">​</i>​
+content.js:114 New node added: <i class=​"checkmark checkmark--white checkmark--medium-small">​</i>​
+content.js:114 New node added: "1 Listing Selected"
+content.js:114 New node added: <button class=​"btn btn--primary m--r--2" data-et-prop-cause=​"share_followers" data-et-prop-count=​"1" data-et-on-name=​"bulk_listing_selection" data-et-name=​"share_to_followers">​Share to Followers​</button>​
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tile__checkbox.d--if.ai--c.jc--c.m--r--2.br--none.bg--blue, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tile__checkbox.d--if.ai--c.jc--c.m--r--2.br--none.bg--blue, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: i.checkmark.checkmark--white.checkmark--medium-small, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tile__checkbox.d--fl.ai--c.jc--c.br--none.bg--blue, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tile__checkbox.d--fl.ai--c.jc--c.br--none.bg--blue, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: i.checkmark.checkmark--white.checkmark--medium-small, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: h1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: h1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.bulk-mode__header-left__container, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: button.btn.btn--tertiary.m--r--4, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.bulk-mode__header-left__container, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:114 New node added: "Kyle's Closet (@kylesawhney) | Poshmark"
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: title, addedNodes: NodeList(1), removedNodes: NodeList(1), previousSibling: null, …}
+content.js:80 Green share button: <button class=​"btn btn--primary m--r--2" data-et-prop-cause=​"share_followers" data-et-prop-count=​"1" data-et-on-name=​"bulk_listing_selection" data-et-name=​"share_to_followers">​Share to Followers​</button>​
+content.js:83 Sharing to followers completed successfully.
+content.js:114 New node added: <div class=​"grid-page__click-overlay">​</div>​
+content.js:114 New node added: <div class=​"grid-page__blur-overlay">​…​</div>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <div class=​"circle-loader circle-loader--small m--r--2">​</div>​
+content.js:114 New node added: <div class=​"tc--b">​ Sharing... ​</div>​
+content.js:114 New node added: "Sharing 1/1 listings..."
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.grid-page__click-overlay, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.grid-page__blur-overlay, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.bulk-mode__header__container.d--fl.fd--c.br--bottom.br--light-gray.jc--c.bg--white.m--b--4, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.ai--c, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.ai--c, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.circle-loader.circle-loader--small.m--r--2, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.ai--c, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tc--b, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: h1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: h1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.bulk-mode__header-left__container, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.bulk-mode__header-left__container, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:114 New node added: <div id=​"flash">​…​</div>​
+content.js:114 New node added: <a href=​"/​closet/​kylesawhney/​about-me" data-et-name=​"about_me" data-et-element-type=​"button" class=​"btn btn--tertiary tr--capitalize m--l--4">​…​</a>​
+content.js:114 New node added: <div aria-haspopup=​"true" tabindex=​"0" data-test=​"dropdown" class=​"dropdown" items=​"[object Object]​,[object Object]​,[object Object]​" selectorclass=​"d--fl" menuclass=​"m--t--4">​…​</div>​
+content.js:114 New node added: <div class=​"desktop-grid-filter">​…​</div>​
+content.js:114 New node added: <div>​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:130 Flash message detected: 1 listing shared to followers.
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div#flash, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: a.btn.btn--tertiary.tr--capitalize.m--l--4, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.dropdown, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.dropdown, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.desktop-grid-filter, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.desktop-grid-filter, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:114 New node added: "Kyle's Closet (@kylesawhney) | Poshmark"
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: title, addedNodes: NodeList(1), removedNodes: NodeList(1), previousSibling: null, …}
+content.js:114 New node added: <div class=​"col-x12 col-l6 col-s8 p--2">​…​</div>​
+content.js:114 New node added: <div class=​"hide">​</div>​
+content.js:114 New node added: <div>​…​</div>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}addedNodes: NodeList [div.col-x12.col-l6.col-s8.p--2]attributeName: nullattributeNamespace: nullnextSibling: div.tile-shimmer.col-x12.col-l6.col-s8oldValue: nullpreviousSibling: nullremovedNodes: NodeList []target: div.tiles_container.m--t--1type: "childList"[[Prototype]]: MutationRecord
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.col-x12.col-l6.col-s8.p--2, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.hide, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:88 Flash message: null
+content.js:94 Error: Flash message not found
+shareItemsToFollowers @ content.js:94
+await in shareItemsToFollowers (async)
+(anonymous) @ content.js:51
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:48 Received message: {type: 'shareToFollowers'}
+content.js:50 Sharing to followers...
+content.js:59 Spanner icon: <i data-et-on-tab=​"all" data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" data-et-name=​"seller_tools" data-et-element-type=​"button" class=​"icon icon-bulk-tools">​</i>​
+content.js:66 Share to followers button: <div data-et-name=​"share_to_followers" data-et-element-type=​"button" data-et-on-screen_type=​"action_sheet" data-et-on-name=​"seller_tools_options" class=​"dropdown__link">​ Share to Followers ​</div>​
+content.js:114 New node added: <div id=​"hud__backdrop">​…​</div>​
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div#hud__backdrop, …}
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​795391481/​?random=1682198197773&cv=11&fst=1682198197773&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​1008471087/​?random=1682198197777&cv=11&fst=1682198197777&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​780917115/​?random=1682198197781&cv=11&fst=1682198197781&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​399307491/​?random=1682198197785&cv=11&fst=1682198197785&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script attributionsrc type=​"text/​javascript" async src=​"https:​/​/​www.googleadservices.com/​pagead/​conversion/​795391481/​?random=1682198197788&cv=11&fst=1682198197788&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&label=gQTVCJX05PACEPnrovsC&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&value=0&bttype=purchase&capi=1&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​10801271564/​?random=1682198197798&cv=11&fst=1682198197798&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: <script type=​"text/​javascript" async src=​"https:​/​/​googleads.g.doubleclick.net/​pagead/​viewthroughconversion/​10850172793/​?random=1682198197800&cv=11&fst=1682198197800&bg=ffffff&guid=ON&async=1&gtm=45He34j0&u_w=1440&u_h=900&url=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney&hn=www.googleadservices.com&frm=0&tiba=Kyle's%20Closet%20(%40kylesawhney)​%20%7C%20Poshmark&userId=ext1%3Afe208ecc-7ad7-4a59-b382-0f1b3c6d5626&auid=1486269122.1681264929&fledge=1&uaa=x86&uab=64&uafvl=Chromium%3B112.0.5615.121%7CGoogle%2520Chrome%3B112.0.5615.121%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uap=macOS&uapv=13.3.1&uaw=0&data=event%3Dlisting_view%3Becomm_pagetype%3Dlisting_details&rfmt=3&fmt=4">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script async src=​"https:​/​/​www.paypal.com/​tagmanager/​pptm.js?id=43251cb2-1094-11e8-b8a5-0535beebfa8f">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id>​…​</script>​
+content.js:114 New node added: <script async src=​"https:​/​/​www.paypal.com/​tagmanager/​pptm.js?t=xo&id=poshmark.com">​</script>​
+content.js:114 New node added: #text
+content.js:114 New node added: <script type=​"text/​javascript" id src=​"https:​/​/​tag.simpli.fi/​sifitag/​53d16bd0-8abe-013b-5c33-0cc47a1f72a4?referer=https%3A%2F%2Fposhmark.com%2Fcloset%2Fkylesawhney">​</script>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:114 New node added: <div class=​"bulk-mode__header__container d--fl fd--c br--bottom br--light-gray jc--c bg--white m--b--4" data-timeout-i-d=​"298" style=​"position:​ sticky;​ z-index:​ 2;​ vertical-align:​ top;​ top:​ 50px;​ bottom:​ unset;​">​…​</div>​
+content.js:114 New node added: <div class=​"d--fl p--l--2 p--t--5 p--b--2">​…​</div>​
+content.js:114 New node added: <li class=​"dropdown__menu__item">​…​</li>​
+content.js:114 New node added: <li class=​"dropdown__menu__item">​…​</li>​
+content.js:114 New node added: <div class=​"tile__title tc--b">​ Meet your Posher, Kyle ​</div>​
+content.js:114 New node added: <span class=​"m--t--1 tile__details__pipe__size ellipses">​ Size: OS ​</span>​
+content.js:114 New node added: <span class=​"tile__details__pipe__brand ellipses m--t--1">​ Meet the Posher ​</span>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <div class=​"likeFont tc--g">​ 0 Likes ​</div>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <a data-et-prop-lister_id=​"643f28c9e2ac0caf3fbd75c5" data-et-prop-listing_id=​"643f297e845f84c128c4cfc5" data-et-prop-location=​"listing_tile" data-et-prop-unit_position=​"0" data-et-element-type=​"image" data-et-name=​"listing" class=​"tile__covershot tile__bulk-active__image no--select" target>​…​</a>​
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: head, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: script, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: body, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: text, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: ul.dropdown__menu.dropdown__menu--right, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: li.dropdown__menu__item, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: ul.dropdown__menu.dropdown__menu--right, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: li.dropdown__menu__item, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.title__condition__container, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.title__condition__container, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile__title.tc--b, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.m--t--1.tc--g, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.m--t--1.tc--g, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: span.m--t--1.tile__details__pipe__size.ellipses, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.m--t--1.tc--g, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: span.tile__details__pipe__brand.ellipses.m--t--1, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.m--t--1.tc--g, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: span.tile__details__pipe__brand.ellipses.m--t--1, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.likeFont.tc--g, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.card.card--small, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: a.tile__covershot.no--select, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.card.card--small, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: null, …}
+content.js:114 New node added: "Kyle's Closet (@kylesawhney) | Poshmark"
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: title, addedNodes: NodeList(1), removedNodes: NodeList(1), previousSibling: null, …}
+advertisecast-108-adswizz.attribution.adswizz.com/fire?pixelId=e6487149-b310-44d3-8db8-f0b646fb0b0b&type=sitevisit&subtype=Sitewide&aw_0_req.gdpr=true&gtmcb=2074126574:1     GET https://advertisecast-108-adswizz.attribution.adswizz.com/fire?pixelId=e6487149-b310-44d3-8db8-f0b646fb0b0b&type=sitevisit&subtype=Sitewide&aw_0_req.gdpr=true&gtmcb=2074126574 net::ERR_BLOCKED_BY_CLIENT
+Image (async)
+pc @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:103
+WD @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:462
+(anonymous) @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:541
+Ve @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:142
+e @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:360
+(anonymous) @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:91
+(anonymous) @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:361
+(anonymous) @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:361
+Vt @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:362
+du @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:366
+fv @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:382
+iv @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:387
+b.push @ gtm.js?id=GTM-WL69NPH&gtm_auth=frvvXcvTLPB7RSj2zHeAtQ&gtm_preview=env-2&gtm_cookies_win=x:390
+b.push @ js?id=G-S34VRNNVTV&l=dataLayer&cx=c:387
+value @ app.8c94f9792d03937b1f7c.js:2
+value @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+p.commit @ vue_router.d1b3f93f9ec251c951e8.js:2
+commit @ vue_router.d1b3f93f9ec251c951e8.js:2
+setEventTrackingAttributes @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+p.dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+(anonymous) @ closet.ceda8463410d6ffb099a.js:2
+y @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+o @ app.8c94f9792d03937b1f7c.js:2
+s @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+r @ core_js_pure.5b90a7cbb8fd129ee42f.js:1
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ closet.ceda8463410d6ffb099a.js:2
+_n.run @ vue.08ae359a9f2b085b22e0.js:2
+yn @ vue.08ae359a9f2b085b22e0.js:2
+(anonymous) @ vue.08ae359a9f2b085b22e0.js:2
+Qe @ vue.08ae359a9f2b085b22e0.js:2
+Promise.then (async)
+We @ vue.08ae359a9f2b085b22e0.js:2
+it @ vue.08ae359a9f2b085b22e0.js:2
+(anonymous) @ vue.08ae359a9f2b085b22e0.js:2
+_n.update @ vue.08ae359a9f2b085b22e0.js:2
+pe.notify @ vue.08ae359a9f2b085b22e0.js:2
+set @ vue.08ae359a9f2b085b22e0.js:2
+Ee @ vue.08ae359a9f2b085b22e0.js:2
+ClearBulkSelections @ 61.b16a2c66988f006c9cc5.js:1
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+p._withCommit @ vue_router.d1b3f93f9ec251c951e8.js:2
+p.commit @ vue_router.d1b3f93f9ec251c951e8.js:2
+commit @ vue_router.d1b3f93f9ec251c951e8.js:2
+o.commit @ vue_router.d1b3f93f9ec251c951e8.js:2
+toggleIsBulkModeActive @ 61.b16a2c66988f006c9cc5.js:1
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+p.dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+o.dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+(anonymous) @ 61.b16a2c66988f006c9cc5.js:1
+y @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+o @ app.8c94f9792d03937b1f7c.js:2
+s @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+r @ core_js_pure.5b90a7cbb8fd129ee42f.js:1
+(anonymous) @ app.8c94f9792d03937b1f7c.js:2
+(anonymous) @ 61.b16a2c66988f006c9cc5.js:1
+(anonymous) @ vue_router.d1b3f93f9ec251c951e8.js:2
+p.dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+o.dispatch @ vue_router.d1b3f93f9ec251c951e8.js:2
+k.forEach.n.<computed> @ vue_router.d1b3f93f9ec251c951e8.js:2
+(anonymous) @ 303.4d6d78d18a2f068ed5f5.js:1
+setTimeout (async)
+selectBulkModeItem @ 303.4d6d78d18a2f068ed5f5.js:1
+click @ 303.4d6d78d18a2f068ed5f5.js:1
+Ke @ vue.08ae359a9f2b085b22e0.js:2
+n @ vue.08ae359a9f2b085b22e0.js:2
+o._wrapper @ vue.08ae359a9f2b085b22e0.js:2
+shareItemsToFollowers @ content.js:68
+await in shareItemsToFollowers (async)
+(anonymous) @ content.js:51
+VM970:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM970:161
+VM1005:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM1005:161
+VM1040:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM1040:161
+VM1044:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM1044:161
+VM1075:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM1075:161
+VM1105:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM1105:161
+VM1135:161 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ VM1135:161
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:73 Select all checkbox: <div class=​"tile__checkbox d--if ai--c jc--c m--r--2 br--none bg--blue">​…​</div>​
+content.js:114 New node added: <i class=​"checkmark checkmark--white checkmark--medium-small">​</i>​
+content.js:114 New node added: <i class=​"checkmark checkmark--white checkmark--medium-small">​</i>​
+content.js:114 New node added: "1 Listing Selected"
+content.js:114 New node added: <button class=​"btn btn--primary m--r--2" data-et-prop-cause=​"share_followers" data-et-prop-count=​"1" data-et-on-name=​"bulk_listing_selection" data-et-name=​"share_to_followers">​Share to Followers​</button>​
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tile__checkbox.d--if.ai--c.jc--c.m--r--2.br--none.bg--blue, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tile__checkbox.d--if.ai--c.jc--c.m--r--2.br--none.bg--blue, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: i.checkmark.checkmark--white.checkmark--medium-small, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tile__checkbox.d--fl.ai--c.jc--c.br--none.bg--blue, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tile__checkbox.d--fl.ai--c.jc--c.br--none.bg--blue, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: i.checkmark.checkmark--white.checkmark--medium-small, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: h1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: h1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.bulk-mode__header-left__container, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: button.btn.btn--tertiary.m--r--4, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.bulk-mode__header-left__container, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:80 Green share button: <button class=​"btn btn--primary m--r--2" data-et-prop-cause=​"share_followers" data-et-prop-count=​"1" data-et-on-name=​"bulk_listing_selection" data-et-name=​"share_to_followers">​Share to Followers​</button>​
+content.js:83 Sharing to followers completed successfully.
+content.js:114 New node added: <div class=​"grid-page__click-overlay">​</div>​
+content.js:114 New node added: <div class=​"grid-page__blur-overlay">​…​</div>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <div class=​"circle-loader circle-loader--small m--r--2">​</div>​
+content.js:114 New node added: <div class=​"tc--b">​ Sharing... ​</div>​
+content.js:114 New node added: "Sharing 1/1 listings..."
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.grid-page__click-overlay, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.grid-page__blur-overlay, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.bulk-mode__header__container.d--fl.fd--c.br--bottom.br--light-gray.jc--c.bg--white.m--b--4, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.ai--c, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.ai--c, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.circle-loader.circle-loader--small.m--r--2, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.d--fl.ai--c, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tc--b, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: h1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: h1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.bulk-mode__header-left__container, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.bulk-mode__header-left__container, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:114 New node added: "Kyle's Closet (@kylesawhney) | Poshmark"
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: title, addedNodes: NodeList(1), removedNodes: NodeList(1), previousSibling: null, …}addedNodes: NodeList [text]attributeName: nullattributeNamespace: nullnextSibling: nulloldValue: nullpreviousSibling: nullremovedNodes: NodeList [text]target: titletype: "childList"[[Prototype]]: MutationRecord
+content.js:114 New node added: <div id=​"flash">​<h5 id=​"flash__message">​ 1 listing shared to followers. ​</h5>​</div>​
+content.js:114 New node added: <a href=​"/​closet/​kylesawhney/​about-me" data-et-name=​"about_me" data-et-element-type=​"button" class=​"btn btn--tertiary tr--capitalize m--l--4">​…​</a>​
+content.js:114 New node added: <div aria-haspopup=​"true" tabindex=​"0" data-test=​"dropdown" class=​"dropdown" items=​"[object Object]​,[object Object]​,[object Object]​" selectorclass=​"d--fl" menuclass=​"m--t--4">​…​</div>​
+content.js:114 New node added: <div class=​"desktop-grid-filter">​…​</div>​
+content.js:114 New node added: <div>​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:114 New node added: <div class=​"tile-shimmer col-x12 col-l6 col-s8">​…​</div>​
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:130 Flash message detected: 1 listing shared to followers.
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div#flash, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: a.btn.btn--tertiary.tr--capitalize.m--l--4, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.dropdown, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.closet__header__info__user-details__actions, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.dropdown, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.desktop-grid-filter, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: nav.col-l5.col-x8, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.desktop-grid-filter, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: section.main__column.col-l19.col-x16, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: div.tile-shimmer.col-x12.col-l6.col-s8, …}
+content.js:114 New node added: <div class=​"col-x12 col-l6 col-s8 p--2">​…​</div>​
+content.js:114 New node added: <div class=​"hide">​</div>​
+content.js:114 New node added: <div>​…​</div>​
+content.js:114 New node added: <!---->
+content.js:114 New node added: <!---->
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: null, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.col-x12.col-l6.col-s8.p--2, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div.hide, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: div, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: div.tiles_container.m--t--1, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+content.js:114 New node added: "Kyle's Closet (@kylesawhney) | Poshmark"
+content.js:124 Incoming mutation: MutationRecord {type: 'childList', target: title, addedNodes: NodeList(1), removedNodes: NodeList(1), previousSibling: null, …}
+content.js:88 Flash message: null
+content.js:94 Error: Flash message not found
+shareItemsToFollowers @ content.js:94
+await in shareItemsToFollowers (async)
+(anonymous) @ content.js:51
+ New node added: 
+ Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(1), removedNodes: NodeList(0), previousSibling: comment, …}
+ Incoming mutation: MutationRecord {type: 'childList', target: div, addedNodes: NodeList(0), removedNodes: NodeList(1), previousSibling: comment, …}
+kylesawhney:1 Unchecked runtime.lastError: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
