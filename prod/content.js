@@ -1,27 +1,7 @@
 // Log when content.js is loaded
 console.info('content.js loaded');
 
-// Define observer which checks when new flash messages are detected, which is used to
-// determine the success of the shareItemsToFollowers function.
-
-const flashMessageObserver = new MutationObserver(function (flashMutations) {
-  flashMutations.forEach((flashMutation) => {
-    flashMutation.addedNodes.forEach((flashNode) => {
-      if (flashNode.id === 'flash') {
-        const flashMessageElement = flashNode.querySelector('#flash__message');
-        if (flashMessageElement) {
-          console.info('Flash message detected:', flashMessageElement.textContent.trim());
-          // Send the flash message
-          chrome.runtime.sendMessage({ type: 'flashMessage', content: flashMessageElement.textContent.trim() });
-        } else {
-          console.log('Flash container detected, but no flash message element found.');
-        }
-      }
-    });
-  });
-});
-
-// Parse the closet URL from the current Poshmark page
+// Parse the closet URL from the user's Poshmark page
 function parseClosetURL() {
   console.log('Parsing closet URL...');
   const closetLinks = Array.from(document.querySelectorAll('a.dropdown__link'));
@@ -35,7 +15,6 @@ function parseClosetURL() {
   console.warn('Closet link not found');
   return null;
 }
-
 
 // Check the user is on their closet page
 
@@ -54,7 +33,7 @@ function checkIsOnClosetPage(closetURL) {
 
 // Share all items to followers by clicking on various elements in order.
 
-async function shareItemsToFollowers(callback) {
+async function shareItemsToFollowers(sendResponse) {
   try {
     // Step 1: Click on the spanner icon
     const spannerIcon = document.querySelector('i.icon.icon-bulk-tools');
@@ -91,41 +70,11 @@ async function shareItemsToFollowers(callback) {
     }
     greenShareButton.click();
     console.log('Green share button clicked successfully.');
-
-    // Detect the flash message
-    const flashMessage = await waitForFlashMessage('Flash message not detected after green share button clicked within specified time');
+    sendResponse({ success: true, message: 'Green share button clicked.' });
   } catch (error) {
     console.error(error);
-    callback(error.message);
+    sendResponse({ success: false, message: error.message });
   }
-}
-
-async function waitForFlashMessage(errorMessage) {
-  return new Promise((resolve, reject) => {
-    const flashMessageObserver = new MutationObserver(async (mutations) => {
-      mutations.forEach(async (mutation) => {
-        if (mutation.id  === 'flash') {
-          console.info('Flash message detected:', flashMessageElement.textContent.trim());
-          const flashMessage = mutation.querySelector('#flash__message');
-          if (flashMessage) {
-            console.log('Flash message detected after green share button clicked:', flashMessage);
-            flashMessageObserver.disconnect();
-            clearTimeout(flashTimeout);
-            resolve(flashMessage);
-          }
-        }
-      });
-    });
-
-    // Observe for new flash messages added to the body
-    flashMessageObserver.observe(document.body, { childList: true });
-
-    // Set a timeout to handle cases when the flash message is not detected
-    const flashTimeout = setTimeout(() => {
-      flashMessageObserver.disconnect();
-      reject(new Error(errorMessage));
-    }, 100000); // You can adjust the timeout duration (in milliseconds) as needed
-  });
 }
 
 // Listen for messages from popup.js in order to trigger the `shareItemsToFollowers` function.

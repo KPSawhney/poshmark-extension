@@ -89,3 +89,31 @@ chrome.runtime.onConnect.addListener(function (port) {
     });
   }
 });
+
+// async function waitForFlashMessage(errorMessage) {
+//   return new Promise((resolve, reject) => {
+//     const flashMessageObserver = new MutationObserver((flashMutations) => {
+//       flashMutations.forEach((flashMutation) => {
+//         flashMutation.addedNodes.forEach((flashNode) => {
+//           if (flashNode.id === 'flash') {
+//             const flashMessage = flashNode.querySelector('#flash__message');
+//             console.info('Flash message detected:', flashMessage.textContent.trim());
+//             if (flashMessage) {
+//               console.log('Flash message detected after green share button clicked:', flashMessage);
+//               flashMessageObserver.disconnect();
+//               clearTimeout(flashTimeout);
+//               resolve(flashMessage);
+//             }
+//           }
+//         });
+//       });
+//     });
+
+//     // Observe for new flash messages added to the body
+//     flashMessageObserver.observe(document.body, { childList: true });
+//   });
+// }
+
+// // Initialize the flashMessageObserver before clicking the green share button
+// const flashMessagePromise = waitForFlashMessage('Flash message not detected after green share button clicked within specified time');
+// console.log('Flash message promise:', flashMessagePromise);
