@@ -86,3 +86,68 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     return true;
   }
 });
+
+// Legacy Flash Messages Code
+
+// // This function observes the flash messages on the page and sends a message to the background script
+// // when a new flash message is detected
+// function observeFlashMessages() {
+//   let flashMessageObserver;
+
+//   // Get the active tab when the function is called
+//   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+//     // Check if the active tab is on the Poshmark website
+//     if (tabs[0].url.indexOf('https://poshmark.com') !== -1) {
+//       console.log('Starting to observe flash messages...');
+//       flashMessageObserver = new MutationObserver((mutations) => {
+//         mutations.forEach((mutation) => {
+//           mutation.addedNodes.forEach((node) => {
+//             if (node.id === 'flash') {
+//               const flashMessage = node.querySelector('#flash__message');
+//               console.log('Flash message detected:', flashMessage.textContent.trim());
+//               chrome.runtime.sendMessage({ type: 'flashMessageDetected', message: flashMessage.textContent.trim() });
+//             }
+//           });
+//         });
+//       });
+
+//       flashMessageObserver.observe(document.body, { childList: true });
+//     } else {
+//       console.log('Disable or lock the extension because the active tab is not on the Poshmark website');
+//       chrome.management.setEnabled(chrome.runtime.id, false);
+//     }
+//   });
+
+//   // Listen for changes in the active tab and pause or resume the observation of flash messages accordingly
+//   chrome.tabs.onActivated.addListener(function () {
+//     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+//       if (tabs[0].url.indexOf('https://poshmark.com') !== -1) {
+//         if (flashMessageObserver) {
+//           console.log('Resuming observation of flash messages...');
+//           flashMessageObserver.observe(document.body, { childList: true });
+//         } else {
+//           console.log('Starting to observe flash messages...');
+//           flashMessageObserver = new MutationObserver((mutations) => {
+//             mutations.forEach((mutation) => {
+//               mutation.addedNodes.forEach((node) => {
+//                 if (node.id === 'flash') {
+//                   const flashMessage = node.querySelector('#flash__message');
+//                   console.log('Flash message detected:', flashMessage.textContent.trim());
+//                   chrome.runtime.sendMessage({ type: 'flashMessageDetected', message: flashMessage.textContent.trim() });
+//                 }
+//               });
+//             });
+//           });
+
+//           flashMessageObserver.observe(document.body, { childList: true });
+//         }
+//       } else {
+//         console.log('Pausing observation of flash messages...');
+//         if (flashMessageObserver) {
+//           flashMessageObserver.disconnect();
+//         }
+//       }
+//     });
+//   });
+// }
+// observeFlashMessages();
