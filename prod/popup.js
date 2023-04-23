@@ -1,27 +1,6 @@
 console.info("popup.js loaded");
 
-// This function executes the shareToFollowers function from `content.js`, and returns
-// a success animation on success
-
-function shareItemsToFollowers(callback) {
-  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-    chrome.tabs.sendMessage(
-      tabs[0].id,
-      { type: "shareToFollowers" },
-      (response) => {
-        if (response && response.success) {
-          callback(response.message);
-          console.info("Clothes were successfully shared!");
-        } else {
-          console.error(
-            "Error: Clothes were not shared after click. Reason: " +
-              (response ? response.message : "unknown error")
-          );
-        }
-      }
-    );
-  });
-}
+import { shareItemsToFollowers } from './functions/popup_functions.js';
 
 // Wrap content inside DOM Content listener to ensure it doesn't run before Poshmark loads.
 document.addEventListener("DOMContentLoaded", () => {
@@ -34,19 +13,26 @@ document.addEventListener("DOMContentLoaded", () => {
     console.info(
       `Received login status: ${isLoggedIn ? "Logged In" : "Not Logged In"}`
     );
+
+    // Update login status text
     document.getElementById("loginStatus").textContent = isLoggedIn
       ? "Logged In"
       : "Not Logged In";
 
+    // Get button elements
     const poshmarkButton = document.getElementById("poshmarkButton");
     const shareToFollowersButton = document.getElementById(
       "shareToFollowersButton"
     );
+
+    // Get closet URL
     const myClosetURL = response.closetURL;
 
     // Update button text and behavior based on login status
     if (isLoggedIn) {
       poshmarkButton.textContent = "My Closet";
+
+      // Open My Closet page in new tab when button is clicked
       poshmarkButton.addEventListener("click", () => {
         if (myClosetURL) {
           console.info("Opening My Closet...");
@@ -65,7 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
+      // Show "Share to Followers" button
       shareToFollowersButton.style.display = "inline-block";
+
+      // Call shareItemsToFollowers function and show success message when "Share to Followers" button is clicked
       shareToFollowersButton.addEventListener("click", () => {
         console.info("Share to Followers button clicked");
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -81,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     } else {
+      // Show "Log In to Poshmark" button
       poshmarkButton.textContent = "Log In to Poshmark";
       poshmarkButton.addEventListener("click", () => {
         chrome.tabs.create({ url: "https://poshmark.com/login" }, (tab) => {
@@ -91,14 +81,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-
-// Useful legacy code
-
-    // // Listen for flash messages from content.js
-    // chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    //   console.log("Received message from content.js:", message);
-    //   if (message.type === "flashMessage") {
-    //     console.info("Received flash message:", message.content);
-    //   }
-    // });

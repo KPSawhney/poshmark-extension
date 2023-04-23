@@ -61,6 +61,19 @@
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     }
 
+    #runningAnimation {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #runningAnimation img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      animation: spin 2s linear infinite;
+    }
+
     #successAnimation {
       display: none;
       margin-top: 20px;
@@ -72,6 +85,13 @@
       border-radius: 50%;
       object-fit: cover;
       animation: spin 2s linear infinite;
+    }
+
+    #runningMessage, #successMessage {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #2f2f2f;
     }
 
     @keyframes spin {
@@ -96,9 +116,14 @@
   <div id="loginStatus">Checking login status...</div>
   <button id="poshmarkButton">Open Poshmark</button>
   <button id="shareToFollowersButton" style="display:none;">Share to Followers</button>
-  <div id="successAnimation">
-    <img src="https://cdn.globaldanceelectronic.com/wp-content/uploads/2019/06/maxresdefault.jpg" alt="Success" />
+  <div id="runningAnimation">
+    <img src="https://cdn.globaldanceelectronic.com/wp-content/uploads/2019/06/maxresdefault.jpg" alt="Running..." />
+    <div id="runningMessage">Running...</div>
   </div>
-  <script src="popup.js"></script>
+  <div id="successAnimation">
+    <img src="https://cdn.vox-cdn.com/thumbor/nzEoRkg5oILvwnXM8t4LPfTQgxA=/0x8:554x320/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/48401727/Screen_Shot_2015-12-21_at_8.21.47_AM.0.0.png" alt="Win Win Win" />
+    <div id="successMessage">Success!</div>
+  </div>
+  <script type="module" src="popup.js"></script>
 </body>
 </html>

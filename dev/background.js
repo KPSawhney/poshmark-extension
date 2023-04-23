@@ -1,98 +1,38 @@
 // Log when background.js is loaded
 console.info("background.js loaded");
 
-// Check Poshmark login status using jwt and ui cookies
-function checkPoshmarkLoginStatus(callback) {
-  // Log that we are checking Poshmark login status
-  console.info("Checking Poshmark login status...");
+import {
+  checkPoshmarkLoginStatus,
+  getClosetURL,
+} from "./functions/background_functions.js";
 
-  // Get the jwt and ui cookies from Poshmark
-  chrome.cookies.get(
-    {
-      url: "https://poshmark.com",
-      name: "jwt",
-    },
-    function (jwtCookie) {
-      chrome.cookies.get(
-        {
-          url: "https://poshmark.com",
-          name: "ui",
-        },
-        function (uiCookie) {
-          // If both cookies are present, the user is logged in
-          if (jwtCookie && uiCookie) {
-            poshmarkLoginStatus = "Logged In";
-          } else {
-            poshmarkLoginStatus = "Not Logged In";
-          }
-          // Log the Poshmark login status
-          console.info("Poshmark login status:", poshmarkLoginStatus);
-
-          // Call the callback function with the Poshmark login status
-          callback(poshmarkLoginStatus);
-        }
-      );
-    }
-  );
-}
-
-// Get closet URL from local storage
-async function getClosetURL() {
-  // Log that we are getting the closet URL from local storage
-  console.info("Getting closet URL from local storage...");
-
-  // Try to get the closet URL from local storage
-  return new Promise((resolve) => {
-    chrome.storage.local.get("closetURL", function (data) {
-      if (chrome.runtime.lastError) {
-        // Log the error
-        console.error(
-          "Error getting closet URL from local storage:",
-          chrome.runtime.lastError
-        );
-        resolve(null);
-      } else {
-        // Log the closet URL
-        console.info("Closet URL from local storage:", data.closetURL);
-
-        // Return the closet URL
-        resolve(data.closetURL);
-      }
-    });
-  });
-}
-
-// Listen for connection from popup.js to send login status and closet URL
-chrome.runtime.onConnect.addListener(function (port) {
-  // If the connection is from the popup.js script with the name "getPoshmarkData",
-  // check the Poshmark login status and get the closet URL
-  if (port.name === "getPoshmarkData") {
-    checkPoshmarkLoginStatus(async function (status) {
-      const myClosetURL = await getClosetURL();
-      port.postMessage({
-        isLoggedIn: status === "Logged In",
-        closetURL: myClosetURL,
-      });
-    });
-  }
-});
-
-// Store closet URL received from content.js
+// Declare myClosetURL variable
 let myClosetURL = null;
 
 // Listen for messages from content.js to update myClosetURL
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-  // If the message type is "closetURL",
-  // update myClosetURL with the closet URL
+  // If the message type is "closetURL", update myClosetURL with the closet URL
   if (message.type === "closetURL") {
+    console.log("Received closet URL message:", message);
     myClosetURL = message.url;
-    console.info("Received closet URL:", myClosetURL);
-  } else if (message.type === "flashMessage") {
-    console.log("Flash message detected:", message.content);
-    // Send the flash message to popup.js
-    chrome.runtime.sendMessage({
-      type: "flashMessage",
-      content: message.content,
+    console.info("Updated closet URL:", myClosetURL);
+  }
+});
+
+// Await connection from popup.js to send login status and closet URL
+chrome.runtime.onConnect.addListener(function (port) {
+  // If the connection is from the popup.js script with the name "getPoshmarkData",
+  // check the Poshmark login status and get the closet URL
+  if (port.name === "getPoshmarkData") {
+    console.log("Connected to popup.js with the name 'getPoshmarkData'");
+    checkPoshmarkLoginStatus(async function (status) {
+      console.log("Poshmark login status:", status);
+      const myClosetURL = await getClosetURL();
+      console.log("Sending login status and closet URL to popup.js");
+      port.postMessage({
+        isLoggedIn: status === "Logged In",
+        closetURL: myClosetURL,
+      });
     });
   }
 });
