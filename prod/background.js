@@ -1,6 +1,9 @@
 // Log when background.js is loaded
 console.info("background.js loaded");
 
+// Declare myClosetURL variable
+let myClosetURL = null;
+
 // Check Poshmark login status using jwt and ui cookies
 function checkPoshmarkLoginStatus(callback) {
   // Log that we are checking Poshmark login status
@@ -62,7 +65,17 @@ async function getClosetURL() {
   });
 }
 
-// Listen for connection from popup.js to send login status and closet URL
+// Listen for messages from content.js to update myClosetURL
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  // If the message type is "closetURL",
+  // update myClosetURL with the closet URL
+  if (message.type === "closetURL") {
+    myClosetURL = message.url;
+    console.info("Received closet URL:", myClosetURL);
+  }
+});
+
+// Await connection from popup.js to send login status and closet URL
 chrome.runtime.onConnect.addListener(function (port) {
   // If the connection is from the popup.js script with the name "getPoshmarkData",
   // check the Poshmark login status and get the closet URL
@@ -73,26 +86,6 @@ chrome.runtime.onConnect.addListener(function (port) {
         isLoggedIn: status === "Logged In",
         closetURL: myClosetURL,
       });
-    });
-  }
-});
-
-// Store closet URL received from content.js
-let myClosetURL = null;
-
-// Listen for messages from content.js to update myClosetURL
-chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-  // If the message type is "closetURL",
-  // update myClosetURL with the closet URL
-  if (message.type === "closetURL") {
-    myClosetURL = message.url;
-    console.info("Received closet URL:", myClosetURL);
-  } else if (message.type === "flashMessage") {
-    console.log("Flash message detected:", message.content);
-    // Send the flash message to popup.js
-    chrome.runtime.sendMessage({
-      type: "flashMessage",
-      content: message.content,
     });
   }
 });

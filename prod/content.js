@@ -1,7 +1,9 @@
 // Log when content.js is loaded
 console.info('content.js loaded');
 
-// Spin up observer to check when new flash messages are detected, and send them to background.js to save in storage.
+// Define observer which checks when new flash messages are detected, which is used to
+// determine the success of the shareItemsToFollowers function.
+
 const flashMessageObserver = new MutationObserver(function (flashMutations) {
   flashMutations.forEach((flashMutation) => {
     flashMutation.addedNodes.forEach((flashNode) => {
@@ -9,7 +11,7 @@ const flashMessageObserver = new MutationObserver(function (flashMutations) {
         const flashMessageElement = flashNode.querySelector('#flash__message');
         if (flashMessageElement) {
           console.info('Flash message detected:', flashMessageElement.textContent.trim());
-          // Send the flash message to background.js
+          // Send the flash message
           chrome.runtime.sendMessage({ type: 'flashMessage', content: flashMessageElement.textContent.trim() });
         } else {
           console.log('Flash container detected, but no flash message element found.');
@@ -18,9 +20,6 @@ const flashMessageObserver = new MutationObserver(function (flashMutations) {
     });
   });
 });
-
-// Start observing the entire document for new nodes being added
-flashMessageObserver.observe(document, { childList: true, subtree: true });
 
 // Parse the closet URL from the current Poshmark page
 function parseClosetURL() {
@@ -37,6 +36,9 @@ function parseClosetURL() {
   return null;
 }
 
+
+// Check the user is on their closet page
+
 function checkIsOnClosetPage(closetURL) {
   const currentURL = window.location.href;
   console.log('Current URL:', currentURL);
@@ -50,17 +52,7 @@ function checkIsOnClosetPage(closetURL) {
   }
 }
 
-// Spin up listeners.
-
-// Listen for messages from popup.js
-chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-  console.log('Received message:', message);
-  if (message.type === 'shareToFollowers') {
-    console.info('Sharing to followers...');
-    shareItemsToFollowers(sendResponse);
-    return true;
-  }
-});
+// Share all items to followers by clicking on various elements in order.
 
 async function shareItemsToFollowers(callback) {
   try {
@@ -102,13 +94,6 @@ async function shareItemsToFollowers(callback) {
 
     // Detect the flash message
     const flashMessage = await waitForFlashMessage('Flash message not detected after green share button clicked within specified time');
-    const itemsShared = flashMessage.textContent.match(/\d+/);
-    if (itemsShared) {
-      console.info(`${itemsShared[0]} items shared`);
-      // Save the number of items shared in local storage
-      chrome.storage.local.set({ itemsShared: itemsShared[0] });
-      callback(flashMessage.textContent.trim());
-    }
   } catch (error) {
     console.error(error);
     callback(error.message);
@@ -119,11 +104,11 @@ async function waitForFlashMessage(errorMessage) {
   return new Promise((resolve, reject) => {
     const flashMessageObserver = new MutationObserver(async (mutations) => {
       mutations.forEach(async (mutation) => {
-        if (mutation.addedNodes.length > 0) {
-          console.log('New node added:', mutation.addedNodes[0]);
-          const flashMessage = mutation.addedNodes[0].querySelector('span.flash__message');
+        if (mutation.id  === 'flash') {
+          console.info('Flash message detected:', flashMessageElement.textContent.trim());
+          const flashMessage = mutation.querySelector('#flash__message');
           if (flashMessage) {
-            console.log('Flash message detected after green share button clicked:', flashMessage.textContent.trim());
+            console.log('Flash message detected after green share button clicked:', flashMessage);
             flashMessageObserver.disconnect();
             clearTimeout(flashTimeout);
             resolve(flashMessage);
@@ -132,13 +117,23 @@ async function waitForFlashMessage(errorMessage) {
       });
     });
 
-    // Observe for new nodes added to the body
+    // Observe for new flash messages added to the body
     flashMessageObserver.observe(document.body, { childList: true });
 
     // Set a timeout to handle cases when the flash message is not detected
     const flashTimeout = setTimeout(() => {
       flashMessageObserver.disconnect();
       reject(new Error(errorMessage));
-    }, 5000); // You can adjust the timeout duration (in milliseconds) as needed
+    }, 100000); // You can adjust the timeout duration (in milliseconds) as needed
   });
 }
+
+// Listen for messages from popup.js in order to trigger the `shareItemsToFollowers` function.
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  console.log('Received message:', message);
+  if (message.type === 'shareToFollowers') {
+    console.info('Sharing to followers...');
+    shareItemsToFollowers(sendResponse);
+    return true;
+  }
+});

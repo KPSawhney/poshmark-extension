@@ -1,17 +1,5 @@
 console.info("popup.js loaded");
 
-// Function to update the UI with the number of items shared
-function updateItemsShared() {
-  chrome.storage.local.get(['itemsShared'], (result) => {
-    const itemsShared = result.itemsShared;
-    if (itemsShared) {
-      document.getElementById('itemsShared').textContent = `${itemsShared} items shared`;
-    } else {
-      document.getElementById('itemsShared').textContent = '';
-    }
-  });
-}
-
 // This function executes the shareToFollowers function from `content.js`, and returns
 // a success animation on success
 
@@ -52,14 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("Received message from content.js:", message);
       if (message.type === "flashMessage") {
         console.info("Received flash message:", message.content);
-        const itemsShared = message.content.match(/\d+/);
-        if (itemsShared) {
-          console.info(`${itemsShared[0]} items shared`);
-          // Save the number of items shared in local storage
-          chrome.storage.local.set({ itemsShared: itemsShared[0] });
-          // Update the UI with the number of items shared
-          updateItemsShared();
-        }
       }
     });
 
