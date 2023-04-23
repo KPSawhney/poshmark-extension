@@ -9,11 +9,14 @@ function shareItemsToFollowers(callback) {
       tabs[0].id,
       { type: "shareToFollowers" },
       (response) => {
-        if (response) {
-          callback(response);
+        if (response && response.success) {
+          callback(response.message);
           console.info("Clothes were successfully shared!");
         } else {
-          console.error("Error: Clothes were not shared after click.");
+          console.error(
+            "Error: Clothes were not shared after click. Reason: " +
+              (response ? response.message : "unknown error")
+          );
         }
       }
     );
@@ -34,14 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("loginStatus").textContent = isLoggedIn
       ? "Logged In"
       : "Not Logged In";
-
-    // Listen for flash messages from content.js
-    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-      console.log("Received message from content.js:", message);
-      if (message.type === "flashMessage") {
-        console.info("Received flash message:", message.content);
-      }
-    });
 
     const poshmarkButton = document.getElementById("poshmarkButton");
     const shareToFollowersButton = document.getElementById(
@@ -88,11 +83,22 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       poshmarkButton.textContent = "Log In to Poshmark";
       poshmarkButton.addEventListener("click", () => {
-        chrome.tabs.create({ url: "https://poshmark.com/login" });
-        console.info("Poshmark opened in new tab:", tab.id);
+        chrome.tabs.create({ url: "https://poshmark.com/login" }, (tab) => {
+          console.info("Poshmark opened in new tab:", tab.id);
+        });
       });
-
       shareToFollowersButton.style.display = "none";
     }
   });
 });
+
+
+// Useful legacy code
+
+    // // Listen for flash messages from content.js
+    // chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    //   console.log("Received message from content.js:", message);
+    //   if (message.type === "flashMessage") {
+    //     console.info("Received flash message:", message.content);
+    //   }
+    // });
