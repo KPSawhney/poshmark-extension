@@ -1,8 +1,6 @@
 // Log when content.js is loaded
 console.info("content.js loaded");
 
-// Content functions.
-
 // Parse the closet URL from the user's Poshmark page
 function parseClosetURL() {
   console.log("Parsing closet URL...");
@@ -86,7 +84,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   if (message.type === "shareToFollowers") {
     console.info("Sharing to followers...");
     shareItemsToFollowers(sendResponse);
-    // Return true to keep the message channel open for asynchronous responses.
-    return true;
+    // Close the message channel by returning false since there's no need for asynchronous response
+    return false;
   }
 });

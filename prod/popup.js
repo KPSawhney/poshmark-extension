@@ -1,6 +1,6 @@
 console.info("popup.js loaded");
 
-import { shareItemsToFollowers } from './functions/popup_functions.js';
+import { shareItemsToFollowers, openMyCloset} from './functions/popup_functions.js';
 
 // Wrap content inside DOM Content listener to ensure it doesn't run before Poshmark loads.
 document.addEventListener("DOMContentLoaded", () => {
@@ -32,29 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isLoggedIn) {
       poshmarkButton.textContent = "My Closet";
 
-      // Open My Closet page in new tab when button is clicked
-      poshmarkButton.addEventListener("click", () => {
-        if (myClosetURL) {
-          console.info("Opening My Closet...");
-          chrome.tabs.create({ url: myClosetURL }, (tab) => {
-            if (chrome.runtime.lastError) {
-              console.error(
-                "Error opening My Closet:",
-                chrome.runtime.lastError
-              );
-            } else {
-              console.info("My Closet opened in new tab:", tab.id);
-            }
-          });
-        } else {
-          console.warn("Closet URL not available");
-        }
-      });
-
       // Show "Share to Followers" button
       shareToFollowersButton.style.display = "inline-block";
 
-      // Call shareItemsToFollowers function and show success message when "Share to Followers" button is clicked
+      // Open My Closet page when button is clicked
+      poshmarkButton.addEventListener("click", () => {
+        console.info("Open My Closet button clicked");
+        openMyCloset(myClosetURL)
+      });
+
+      // Call shareItemsToFollowers function and show success message when "Share to Followers" Poshmark button is clicked
       shareToFollowersButton.addEventListener("click", () => {
         console.info("Share to Followers button clicked");
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
