@@ -1,6 +1,12 @@
 // Log when content.js is loaded
 console.info("content.js loaded");
 
+function displayError(message) {
+  const errorContainer = document.getElementById("errorContainer");
+  errorContainer.textContent = message;
+  errorContainer.style.display = "block";
+}
+
 // Parse the closet URL from the user's Poshmark page
 function parseClosetURL() {
   console.log("Parsing closet URL...");
@@ -63,8 +69,9 @@ async function shareItemsToFollowers(sendResponse) {
     console.log("Green share button clicked successfully.");
     sendResponse({ success: true, message: "Green share button clicked." });
   } catch (error) {
-    console.error(error);
-    sendResponse({ success: false, message: error.message });
+    console.error("An error occurred while sharing items:", error);
+    displayError("An error occurred while sharing items. Please try again.");
+    sendResponse({ success: false, error: error.message });
   }
 }
 
