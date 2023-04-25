@@ -25,5 +25,11 @@
       "matches": ["https://*.poshmark.com/*"],
       "js": ["content.js"]
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["settings.html"],
+      "matches": ["https://*.poshmark.com/*"]
+    }
   ]
 }
