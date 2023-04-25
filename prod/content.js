@@ -78,13 +78,21 @@ if (closetURL) {
   console.warn("Closet URL not found");
 }
 
-// Listen for messages from popup.js in order to trigger the `shareItemsToFollowers` function.
+// Set up a listener for messages from popup.js.
+// When a "shareToFollowers" message is received, it triggers the `shareItemsToFollowers` function.
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   console.log("Received message:", message);
+
+  // Check if the received message is of type "shareToFollowers".
   if (message.type === "shareToFollowers") {
     console.info("Sharing to followers...");
+
+    // Call the shareItemsToFollowers function and pass the sendResponse as a callback.
     shareItemsToFollowers(sendResponse);
-    // Close the message channel by returning false since there's no need for asynchronous response
-    return false;
+
+    // Return true to keep the message channel open for asynchronous responses.
+    // This ensures proper coordination between the scripts while waiting for a response.
+    return true;
   }
 });
+

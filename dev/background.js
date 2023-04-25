@@ -23,14 +23,25 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 chrome.runtime.onConnect.addListener((port) => {
   if (port.name === "getPoshmarkData") {
     console.log("Connected to popup.js with the name 'getPoshmarkData'");
-    checkPoshmarkLoginStatus(async (status) => {
-      console.log("Poshmark login status:", status);
-      const myClosetURL = await getClosetURL();
-      console.log("Sending login status and closet URL to popup.js");
-      port.postMessage({
-        isLoggedIn: status === "Logged In",
-        closetURL: myClosetURL,
-      });
+    chrome.tabs.query({ active: true, currentWindow: true }, async (tabs) => {
+      const activeTab = tabs[0];
+      const isLoggedIn = await checkPoshmarkLoginStatus();
+      const closetURL = await getClosetURL();
+    
+      function determineState(isLoggedIn, activeTab) {
+        if (!isLoggedIn) {
+          return 1;
+        } else if (activeTab.url.indexOf("poshmark.com") === -1) {
+          return 2;
+        } else if (activeTab.url.indexOf("poshmark.com/closet/") === -1) {
+          return 3;
+        } else {
+          return 4;
+        }
+      }
+    
+      const state = determineState(isLoggedIn, activeTab);
+      port.postMessage({ state, closetURL });
     });
   }
 });

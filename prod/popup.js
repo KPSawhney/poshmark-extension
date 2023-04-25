@@ -1,6 +1,9 @@
 console.info("popup.js loaded");
 
-import { shareItemsToFollowers, openMyCloset} from './functions/popup_functions.js';
+import {
+  shareItemsToFollowers,
+  openMyCloset,
+} from "./functions/popup_functions.js";
 
 // Wrap content inside DOM Content listener to ensure it doesn't run before Poshmark loads.
 document.addEventListener("DOMContentLoaded", () => {
@@ -38,15 +41,23 @@ document.addEventListener("DOMContentLoaded", () => {
       // Open My Closet page when button is clicked
       poshmarkButton.addEventListener("click", () => {
         console.info("Open My Closet button clicked");
-        openMyCloset(myClosetURL)
+        openMyCloset(myClosetURL);
       });
 
       // Call shareItemsToFollowers function and show success message when "Share to Followers" Poshmark button is clicked
       shareToFollowersButton.addEventListener("click", () => {
         console.info("Share to Followers button clicked");
+
+        // Show the "running" animation
+        document.getElementById("runningAnimation").style.display = "block";
+
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
           shareItemsToFollowers((successMessage) => {
             console.info("Success message:", successMessage);
+
+            // Hide the "running" animation
+            document.getElementById("runningAnimation").style.display = "none";
+
             // Update HTML to show success message
             document.getElementById("successAnimation").style.display = "block";
             setTimeout(() => {
