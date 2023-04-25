@@ -50,5 +50,13 @@ function shareItemsToFollowers(callback) {
   });
 }
 
+function switchTab(tabName) {
+  const tabContents = document.querySelectorAll(".tab-content");
+  tabContents.forEach((content) => {
+    content.style.display = "none";
+  });
+  document.getElementById(tabName).style.display = "block";
+}
+
 // Explicitly export the functions
-export { shareItemsToFollowers, openMyCloset };
+export { shareItemsToFollowers, openMyCloset, switchTab };

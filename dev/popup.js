@@ -3,12 +3,24 @@ console.info("popup.js loaded");
 import {
   shareItemsToFollowers,
   openMyCloset,
+  switchTab
 } from "./functions/popup_functions.js";
 
 // Wrap content inside DOM Content listener to ensure it doesn't run before Poshmark loads.
 document.addEventListener("DOMContentLoaded", () => {
   // Connect to background.js
   const port = chrome.runtime.connect({ name: "getPoshmarkData" });
+  // Set up tab click event listeners
+  document.getElementById("shareTab").addEventListener("click", () => {
+    switchTab("share");
+  });
+  document.getElementById("offerTab").addEventListener("click", () => {
+    switchTab("offer");
+  });
+  document.getElementById("settingsTab").addEventListener("click", () => {
+    switchTab("settings");
+  });
+
 
   // Listen for messages from background.js to update UI based on login status
   port.onMessage.addListener((response) => {
